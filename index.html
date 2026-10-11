@@ -82,9 +82,13 @@ header{background:linear-gradient(135deg,#0d2a22,#1a4a3a);color:white;padding:50
 
 </div>
 
-<!-- MUELEKEO WA KUONGEZA KITABU - SOMA HAPA -->
-<div style="background:#fffbeb;border:1px dashed #c9a227;padding:16px;border-radius:10px;margin:20px 0">
-<h4 style="margin:0;color:#92400e;font-size:12px">📌 JINSI YA KUONGEZA KITABU KIPYA HUMU - NDANI YA FILE HII MOJA:</h4>
+<!-- MWANDISHI PEKEE - MAELEKEZO YAMEFICHWA -->
+<div style="text-align:center;margin:20px 0">
+<button onclick="funguaMwandishi()" style="background:#fffbeb;border:1px dashed #c9a227;color:#92400e;padding:8px 16px;border-radius:20px;font-size:11px;cursor:pointer">🔒 Maelekezo ya Mwandishi - Mbogo Shilingi</button>
+</div>
+<div id="mwandishi-panel" style="display:none;background:#fffbeb;border:1px dashed #c9a227;padding:16px;border-radius:10px;margin:20px 0">
+<h4 style="margin:0;color:#92400e;font-size:12px">📌 JINSI YA KUONGEZA KITABU KIPYA HUMU - MWANDISHI PEKEE:</h4>
+<p style="font-size:11px;color:#92400e">Kwa Mbogo Shilingi tu - Weka password 0743093316</p>
 <ol style="font-size:12px;color:#374151;margin:8px 0 0;padding-left:20px">
 <li>Ondoa <code>&lt;!--</code> na <code>--&gt;</code> kwenye KITABU 2 hapo juu</li>
 <li>Badilisha <b>Jina la Kitabu 2</b> na maelezo</li>
@@ -93,6 +97,16 @@ header{background:linear-gradient(135deg,#0d2a22,#1a4a3a);color:white;padding:50
 <li>Save - Deploy - Msomaji ataona Kitabu 2 orodhani!</li>
 </ol>
 </div>
+<script>
+function funguaMwandishi(){
+  var p=prompt('Weka password ya Mwandishi - Mbogo Shilingi:');
+  if(p==='0743093316' || p==='mbogoshaban2026@gmail.com'){
+    document.getElementById('mwandishi-panel').style.display='block';
+  }else if(p!==null){
+    alert('Password si sahihi - kwa mwandishi tu');
+  }
+}
+</script>
 
 <div style="background:white;border:1px solid #e8e0d0;border-radius:12px;padding:20px;margin:40px 0;text-align:center">
 <h4 style="color:#0d2a22;font-size:12px;letter-spacing:0.2em;margin:0">MAWASILIANO YA MWANDISHI</h4>
@@ -762,6 +776,12 @@ document.addEventListener('DOMContentLoaded', function(){
 -->
 
 <script>
+function showTabOriginalCheck(id){
+  if(id==='maelekezo'){
+    var p=prompt('Maelekezo ya Mwandishi - Weka password:');
+    if(p!=='0743093316' && p!=='mbogoshaban2026@gmail.com'){ alert('Kwa mwandishi tu'); return; }
+  }
+}
 function showTab(name){
   document.querySelectorAll('.tab').forEach(t=>t.classList.remove('active'));
   document.getElementById('tab-'+name).classList.add('active');
