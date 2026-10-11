@@ -82,30 +82,83 @@ header{background:linear-gradient(135deg,#0d2a22,#1a4a3a);color:white;padding:50
 
 </div>
 
-<!-- MWANDISHI PEKEE - MAELEKEZO YAMEFICHWA -->
-<div style="text-align:center;margin:20px 0">
-<button onclick="funguaMwandishi()" style="background:#fffbeb;border:1px dashed #c9a227;color:#92400e;padding:8px 16px;border-radius:20px;font-size:11px;cursor:pointer">🔒 Maelekezo ya Mwandishi - Mbogo Shilingi</button>
+<!-- MWANDISHI PEKEE - MAELEKEZO YAMEFICHWA - INPUT BADALA YA PROMPT -->
+<div style="text-align:center;margin:20px 0;background:#fffbeb;border:1px dashed #c9a227;padding:16px;border-radius:12px">
+<div style="font-size:11px;color:#92400e;font-weight:700;margin-bottom:8px">🔒 MAELEKEZO YA MWANDISHI PEKEE - MBOGO SHILINGI</div>
+<div style="display:flex;gap:8px;justify-content:center;align-items:center;flex-wrap:wrap">
+<input id="pass-mwandishi" type="password" placeholder="Weka password ya mwandishi" style="padding:10px 14px;border:1px solid #c9a227;border-radius:20px;font-size:12px;width:200px">
+<button onclick="funguaMwandishi()" style="background:#0d2a22;color:#fde68a;padding:10px 16px;border:none;border-radius:20px;font-size:11px;font-weight:700;cursor:pointer">🔓 FUNGUA MAELEKEZO</button>
 </div>
-<div id="mwandishi-panel" style="display:none;background:#fffbeb;border:1px dashed #c9a227;padding:16px;border-radius:10px;margin:20px 0">
-<h4 style="margin:0;color:#92400e;font-size:12px">📌 JINSI YA KUONGEZA KITABU KIPYA HUMU - MWANDISHI PEKEE:</h4>
-<p style="font-size:11px;color:#92400e">Kwa Mbogo Shilingi tu - Weka password 0743093316</p>
-<ol style="font-size:12px;color:#374151;margin:8px 0 0;padding-left:20px">
-<li>Ondoa <code>&lt;!--</code> na <code>--&gt;</code> kwenye KITABU 2 hapo juu</li>
-<li>Badilisha <b>Jina la Kitabu 2</b> na maelezo</li>
-<li>Nenda chini - tafuta <b>TAB KITABU 2 - SEHEMU YA KITABU KIPYA</b> - ondoa comment - weka content ya kitabu chako</li>
-<li>Ongeza button ya tab juu - kwenye nav-tab - copy button moja - badilisha kuwa <code>kitabu2</code></li>
-<li>Save - Deploy - Msomaji ataona Kitabu 2 orodhani!</li>
-</ol>
+<p style="font-size:10px;color:#92400e;margin-top:6px">Kwa mwandishi tu - Mbogo Shilingi</p>
+</div>
+<div id="mwandishi-panel" style="display:none;background:#0d2a22;color:white;padding:24px;border-radius:16px;margin:20px 0;text-align:left">
+<h2 style="font-family:Amiri,serif;text-align:center;color:#fde68a;font-size:22px">📝 MAELEKEZO YA MWANDISHI PEKEE - MBOGO SHILINGI</h2>
+<p style="text-align:center;color:#d9c9a0;font-size:11px">Kwa mwandishi tu - Siri</p>
+
+<div style="background:white;color:#121212;border-radius:12px;padding:16px;margin:16px 0">
+<h3 style="color:#0d2a22;font-size:13px">📌 HATUA 1: ORODHA</h3>
+<pre style="background:#fdfbf7;border:1px solid #e8e0d0;padding:12px;border-radius:8px;overflow-x:auto;font-size:10px;white-space:pre-wrap">1. Tafuta: &lt;!-- KITABU 2 - HAPA NDIPO UNAWEKA KITABU KIPYA --&gt;
+2. Ondoa &lt;!-- na --&gt;
+3. Badilisha Jina la Kitabu 2 na maelezo
+4. Save</pre>
+</div>
+
+<div style="background:white;color:#121212;border-radius:12px;padding:16px;margin:16px 0">
+<h3 style="color:#0d2a22;font-size:13px">📌 HATUA 2: CONTENT YA KITABU KIPYA</h3>
+<pre style="background:#fdfbf7;border:1px solid #e8e0d0;padding:12px;border-radius:8px;overflow-x:auto;font-size:10px;white-space:pre-wrap">1. Tafuta chini: &lt;!-- TAB KITABU 2 - SEHEMU YA KITABU KIPYA --&gt;
+2. Ondoa &lt;!-- na --&gt;
+3. Weka Mambo yako - Kiarabu Irabu + Matamshi + Fasiri + Dua
+4. ID: tab-kitabu2 = showTab('kitabu2')
+5. Ongeza button juu nav-tab</pre>
+</div>
+
+<div style="background:#fffbeb;border:1px solid #c9a227;border-radius:12px;padding:16px;margin:16px 0;color:#121212">
+<h3 style="color:#92400e;font-size:12px">📌 HATUA 3: MFANO MAMBO 10</h3>
+<p style="font-size:11px;color:#6b7280">Copy template ya Mambo 1-10 - Badilisha</p>
+</div>
+
+<div style="background:white;color:#121212;border-radius:12px;padding:16px;margin:16px 0">
+<h3 style="color:#0d2a22;font-size:13px">📌 HATUA 4: UPDATE BILA KULIPIA</h3>
+<ul style="font-size:11px;color:#374151">
+<li>tiiny.host - Upload index.html - bure</li>
+<li>appsgeyser.com - Website to APK - bure</li>
+<li>GitHub Pages - Upload - Commit - Deploy</li>
+</ul>
+</div>
+
+<div style="background:rgba(255,255,255,0.1);border-radius:10px;padding:12px;text-align:center">
+<p style="color:#fde68a;font-size:11px;font-weight:700">Mbogo Shilingi - mbogoshaban2026@gmail.com - 0743093316 - @mbogoshilingi</p>
+<p style="color:#a7f3d0;font-size:10px">Mwenye kuficha elimu atafungwa kwa moto siku ya Kiama. Sambaza.</p>
+</div>
 </div>
 <script>
 function funguaMwandishi(){
-  var p=prompt('Weka password ya Mwandishi - Mbogo Shilingi:');
-  if(p==='0743093316' || p==='mbogoshaban2026@gmail.com'){
-    document.getElementById('mwandishi-panel').style.display='block';
-  }else if(p!==null){
+  var input=document.getElementById('pass-mwandishi');
+  var p = input ? input.value.trim() : '';
+  if(!p){
+    // fallback prompt kama input empty
+    p=prompt('Weka password ya Mwandishi - Mbogo Shilingi:')||'';
+    p=p.trim();
+  }
+  if(p==='0743093316' || p==='mbogoshaban2026@gmail.com' || p==='0743' || p==='shilingi' || p==='Mbogo'){
+    var panel=document.getElementById('mwandishi-panel');
+    if(panel){
+      panel.style.display='block';
+      panel.scrollIntoView({behavior:'smooth'});
+      if(input) input.value='';
+    }
+  }else{
     alert('Password si sahihi - kwa mwandishi tu');
   }
 }
+document.addEventListener('DOMContentLoaded',function(){
+  var inp=document.getElementById('pass-mwandishi');
+  if(inp){
+    inp.addEventListener('keypress',function(e){
+      if(e.key==='Enter'){ funguaMwandishi(); }
+    });
+  }
+});
 </script>
 
 <div style="background:white;border:1px solid #e8e0d0;border-radius:12px;padding:20px;margin:40px 0;text-align:center">
@@ -814,135 +867,5 @@ function getFormData(){return{jina:document.getElementById('jina')?.value.trim()
 document.getElementById('maoniForm')?.addEventListener('submit',function(e){e.preventDefault();const d=getFormData();if(!d.jina||!d.email||!d.ujumbe){alert('Jaza jina, email yako na ujumbe');return;}const subject=encodeURIComponent(d.mada+' - kutoka kwa '+d.jina+' ('+d.email+')');const body=encodeURIComponent('MTOA MAONI: '+d.jina+'\nEMAIL YA MTOA MAONI: '+d.email+'\nMADA: '+d.mada+'\n\nUJUMBE:\n'+d.ujumbe+'\n\nKutoka: shiny-conkies-585386.netlify.app');window.location.href='mailto:mbogoshaban2026@gmail.com?subject='+subject+'&body='+body;const s=document.getElementById('status');if(s){s.style.display='block';s.innerHTML='✅ Inafungua email... kwenda <b>mbogoshaban2026@gmail.com</b>';}});
 function sendWhatsApp(){const d=getFormData();if(!d.jina||!d.email||!d.ujumbe){alert('Jaza jina, email yako na ujumbe');return;}const text=encodeURIComponent('*MAONI YA KISOMI*\nMtoa Maoni: '+d.jina+'\nEmail ya Mtoa: '+d.email+'\nMada: '+d.mada+'\n\nUjumbe:\n'+d.ujumbe);window.open('https://wa.me/255743093316?text='+text,'_blank');const s=document.getElementById('status');if(s){s.style.display='block';s.innerHTML='✅ Inafungua WhatsApp... kwenda <b>0743093316</b>';}}
 </script>
-
-<div id="maelekezo-kujaza" style="background:linear-gradient(135deg,#0d2a22,#1a4a3a);color:white;padding:40px 24px;margin-top:60px;border-radius:0">
-<div style="max-width:880px;margin:0 auto">
-<h2 style="font-family:Amiri,serif;text-align:center;color:#fde68a;font-size:28px;margin-bottom:10px">📝 MAELEKEZO YA KUJAZA VITABU - MAMA WA VITABU VYA SIRI</h2>
-<p style="text-align:center;color:#d9c9a0;font-size:13px">Kwa Mwandishi: Mbogo Shilingi - Dar es Salaam - mbogoshaban2026@gmail.com - 0743093316</p>
-
-<div style="background:white;color:#121212;border-radius:16px;padding:28px;margin:30px 0">
-<h3 style="color:#0d2a22;font-size:16px">📌 HATUA 1: JINSI YA KUONGEZA KITABU KIPYA KATIKA ORODHA</h3>
-<p style="font-size:13px;color:#6b7280">Hii ndio orodha ya mwanzo - ukibonyeza 📚 ORODHA unaona vitabu vyote</p>
-<pre style="background:#fdfbf7;border:1px solid #e8e0d0;padding:16px;border-radius:8px;overflow-x:auto;font-size:11px;white-space:pre-wrap">
-1. Fungua file hii index.html kwa Notepad / VS Code
-2. Tafuta sehemu inayoandikwa:
-   &lt;!-- KITABU 2 - HAPA NDIPO UNAWEKA KITABU KIPYA --&gt;
-
-3. Ondoa &lt;!-- na --&gt; mwanzo na mwisho - ili iwe hivyo:
-
-&lt;div class="book"&gt;
-  &lt;div class="cover"&gt;ب&lt;/div&gt;
-  &lt;div class="body-card"&gt;
-    &lt;span class="badge"&gt;KITABU 2 - KIPYA&lt;/span&gt;
-    &lt;h3&gt;Jina la Kitabu 2 Hapa - Mf: Siri za Alif&lt;/h3&gt;
-    &lt;p&gt;Maelezo mafupi ya kitabu 2 hapa...&lt;/p&gt;
-    &lt;button onclick="showTab('kitabu2')"&gt;📖 Soma Kitabu 2&lt;/button&gt;
-  &lt;/div&gt;
-&lt;/div&gt;
-
-4. Badilisha:
-   - &lt;div class="cover"&gt;ب&lt;/div&gt; - weka herufi ya Kiarabu ya kitabu kipya
-   - &lt;h3&gt;Jina la Kitabu&lt;/h3&gt; - weka jina halisi
-   - &lt;p&gt;Maelezo...&lt;/p&gt; - weka maelezo mafupi
-   - showTab('kitabu2') - usibadilishe - ni link ya kufungua kitabu
-
-5. Save file - na refresh browser - Kitabu kipya kitaonekana Orodhani!
-</pre>
-</div>
-
-<div style="background:white;color:#121212;border-radius:16px;padding:28px;margin:30px 0">
-<h3 style="color:#0d2a22;font-size:16px">📌 HATUA 2: JINSI YA KUJAZA CONTENT YA KITABU KIPYA</h3>
-<p style="font-size:13px;color:#6b7280">Baada ya kuongeza kwenye Orodha - sasa weka content yake</p>
-<pre style="background:#fdfbf7;border:1px solid #e8e0d0;padding:16px;border-radius:8px;overflow-x:auto;font-size:11px;white-space:pre-wrap">
-1. Tafuta chini kabisa sehemu inayoandikwa:
-   &lt;!-- TAB KITABU 2 - SEHEMU YA KITABU KIPYA --&gt;
-
-2. Ondoa &lt;!-- na --&gt; - ili iwe hivyo:
-
-&lt;div id="tab-kitabu2" class="tab"&gt;
-  &lt;div class="container" style="padding-top:20px"&gt;
-    &lt;div style="background:white;border:2px solid #0d2a22;border-radius:16px;padding:32px;margin:20px 0"&gt;
-      &lt;h2&gt;📚 KITABU 2 - Jina la Kitabu Hapa&lt;/h2&gt;
-      &lt;p&gt;Hapa weka content ya Kitabu 2 - Kiarabu Irabu + Matamshi + Fasiri...&lt;/p&gt;
-      &lt;p&gt;Mwandishi: Mbogo Shilingi | mbogoshaban2026@gmail.com | 0743093316&lt;/p&gt;
-    &lt;/div&gt;
-  &lt;/div&gt;
-&lt;/div&gt;
-
-3. Ndani ya &lt;p&gt; weka Mambo yako - mfano kama Mambo 40 ya Umu Al Kitaab:
-   - Kiarabu na Irabu
-   - Matamshi ya Kizungu
-   - Fasiri / Tafsiri
-   - Dua
-
-4. Usisahau - kila Kitabu kipya - lazima kiwe na ID yake:
-   Kitabu 2 = id="tab-kitabu2" na showTab('kitabu2')
-   Kitabu 3 = id="tab-kitabu3" na showTab('kitabu3')
-   Kitabu 4 = id="tab-kitabu4" na showTab('kitabu4')
-
-5. Kwenye top - nav-tab - ongeza button mpya:
-   &lt;button onclick="showTab('kitabu2')" id="btn-kitabu2" style="background:rgba(255,255,255,0.2);color:white"&gt;📖 KITABU 2&lt;/button&gt;
-
-6. Save na refresh - sasa ukibonyeza 📖 KITABU 2 - itafungua content yako!
-</pre>
-</div>
-
-<div style="background:#fffbeb;border:1px solid #c9a227;border-radius:16px;padding:24px;margin:30px 0;color:#121212">
-<h3 style="color:#92400e;font-size:15px">📌 HATUA 3: MFANO KAMILI - JINSI YA KUJAZA KITABU CHA MAMBO 10</h3>
-<pre style="background:white;border:1px solid #e8e0d0;padding:16px;border-radius:8px;overflow-x:auto;font-size:11px;white-space:pre-wrap">
-&lt;div id="tab-kitabu2" class="tab"&gt;
-&lt;div class="container"&gt;
-  &lt;h2 style="text-align:center;color:#0d2a22"&gt;📚 Siri za Alif - Mambo 10&lt;/h2&gt;
-  
-  &lt;div class="item"&gt;
-    &lt;div class="item-head" onclick="this.parentElement.classList.toggle('open')"&gt;
-      &lt;div&gt;&lt;div class="kicker"&gt;MAMBO 1 / 10&lt;/div&gt;&lt;h2&gt;1. Alif (ا)&lt;/h2&gt;&lt;/div&gt;&lt;div class="arrow"&gt;▼&lt;/div&gt;
-    &lt;/div&gt;
-    &lt;div class="item-body"&gt;
-      &lt;div class="block"&gt;
-        &lt;h4&gt;Kiarabu Irabu&lt;/h4&gt;
-        &lt;div class="aya-box" dir="rtl"&gt;أَ&lt;/div&gt;
-      &lt;/div&gt;
-      &lt;div class="block"&gt;
-        &lt;h4&gt;Matamshi&lt;/h4&gt;
-        &lt;p&gt;A - kama A ya Allah&lt;/p&gt;
-      &lt;/div&gt;
-      &lt;div class="block"&gt;
-        &lt;h4&gt;Fasiri&lt;/h4&gt;
-        &lt;p&gt;Alif ni umoja wa Allah...&lt;/p&gt;
-      &lt;/div&gt;
-      &lt;div class="block"&gt;
-        &lt;h4&gt;Dua&lt;/h4&gt;
-        &lt;div class="dua-box" dir="rtl"&gt;بِسْمِ اللهِ&lt;/div&gt;
-      &lt;/div&gt;
-    &lt;/div&gt;
-  &lt;/div&gt;
-
-  &lt;!-- Rudia div class="item" kwa Mambo 2-10 --&gt;
-
-&lt;/div&gt;
-&lt;/div&gt;
-</pre>
-<p style="font-size:12px;color:#6b7280;margin-top:12px">Hii ndio template - copy na ubadilishe - kwa Mambo 2, 3, 4... 10</p>
-</div>
-
-<div style="background:white;color:#121212;border-radius:16px;padding:28px;margin:30px 0">
-<h3 style="color:#0d2a22;font-size:16px">📌 HATUA 4: JINSI YA KU-UPDATE APP BILA KULIPIA</h3>
-<ul style="font-size:13px;line-height:2;color:#374151">
-<li><strong>Bila Netlify:</strong> Tumia https://tiiny.host - Upload file moja index.html - bure - bila credit - inatoa link mpya</li>
-<li><strong>APK Bure:</strong> Tumia https://appsgeyser.com - Website to APK - Upload index.html - inakupa APK - bure - tuma WhatsApp</li>
-<li><strong>PWA Install:</strong> Fungua index.html kwenye Chrome - ⋮ - Add to Home Screen - Install - app ita-add Home Screen kama Play Store</li>
-<li><strong>GitHub Pages:</strong> Create Repo - Upload index.html - Settings - Pages - Deploy - link bure milele</li>
-</ul>
-</div>
-
-<div style="background:rgba(255,255,255,0.1);border-radius:12px;padding:20px;text-align:center;margin-top:30px">
-<p style="color:#fde68a;font-weight:700;font-size:14px">Mwandishi: Mbogo Shilingi</p>
-<p style="color:#d9c9a0;font-size:12px">Email: mbogoshaban2026@gmail.com | WhatsApp: 0743093316 | Instagram: @mbogoshilingi | Facebook: Mbogo Shilingi<br>Dar es Salaam, Tanzania</p>
-<p style="color:#a7f3d0;font-size:11px;margin-top:8px">Kitabu hiki ni bure - kwa ajili ya Ummah - Dua yako kwangu inatosha<br><strong>Mwenye kuficha elimu atafungwa kwa moto siku ya Kiama. Sambaza.</strong></p>
-</div>
-
-</div>
-</div>
 
 </body></html>
