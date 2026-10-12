@@ -1,0 +1,926 @@
+<!DOCTYPE html><html lang="sw"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><title>Umu Al Kitaab - Mama wa Vitabu vya Siri by Mbogo Shilingi</title>
+<link href="https://fonts.googleapis.com/css2?family=Amiri:wght@400;700&family=Inter:wght@400;600&display=swap" rel="stylesheet">
+<style>
+:root{--paper:#fdfbf7;--ink:#121212;--muted:#6b7280;--accent:#0d2a22;--border:#e8e0d0;--gold:#b89a5b}
+body{background:var(--paper);color:var(--ink);font-family:'Inter',sans-serif;line-height:2;margin:0} .display{font-family:'Amiri',serif} .container{max-width:880px;margin:0 auto;padding:0 24px}
+header{background:linear-gradient(135deg,#0d2a22,#1a4a3a);color:white;padding:50px 20px;text-align:center}
+.wasifu{background:white;border-left:5px solid #0d2a22;padding:32px;margin:30px 0;border-radius:8px;box-shadow:0 4px 12px rgba(0,0,0,0.05)}
+.moyo{background:white;border:2px solid #0d2a22;border-radius:14px;padding:32px;margin:30px 0}
+.aya-box{background:#0a2540;color:#e8f0ff;padding:16px;border-radius:10px;font-family:'Amiri',serif}
+.funzo-box{background:#fffbeb;border-left:4px solid #c9a227;padding:16px;border-radius:0 8px 8px 0} .dua-box{background:#0d2a22;color:#e8f0ed;padding:16px;border-radius:10px}
+.item{background:white;border:1px solid var(--border);border-radius:12px;margin:20px 0;overflow:hidden} .item-head{padding:20px;background:#fcfaf6;cursor:pointer;display:flex;justify-content:space-between;align-items:center} .item-body{display:none;padding:24px} .item.open .item-body{display:block !important}
+.block{margin:20px 0} .block h4{font-size:10px;letter-spacing:0.2em;text-transform:uppercase;color:#0d2a22;margin-bottom:8px}
+.arrow{transition:0.3s} .item.open .arrow{transform:rotate(180deg)}
+.contact-box{background:linear-gradient(135deg,#0d2a22,#153d32);color:white;padding:28px;border-radius:12px;margin:30px 0}
+.contact-box a{color:#d4b77a;text-decoration:none}
+.tab{display:none} .tab.active{display:block}
+.nav-tab{position:sticky;top:0;z-index:999;background:#0d2a22;color:white;padding:12px 16px;display:flex;justify-content:space-between;align-items:center;box-shadow:0 2px 8px rgba(0,0,0,0.3)}
+.nav-tab button{border:none;padding:8px 16px;border-radius:20px;font-weight:700;cursor:pointer;font-size:12px}
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(300px,1fr));gap:20px;margin:30px 0}
+.book{background:white;border:1px solid #e8e0d0;border-radius:16px;overflow:hidden;box-shadow:0 4px 12px rgba(0,0,0,0.05);display:flex;flex-direction:column}
+.cover{height:170px;background:linear-gradient(135deg,#0d2a22,#2d6a4f);display:flex;align-items:center;justify-content:center;color:white;font-family:Amiri,serif;font-size:50px}
+.body-card{padding:18px;flex:1;display:flex;flex-direction:column}
+.badge{font-size:10px;background:#fffbeb;border:1px solid #c9a227;color:#92400e;padding:4px 10px;border-radius:20px;display:inline-block;margin-bottom:8px}
+
+</style></head><body>
+
+<div class="nav-tab">
+<div style="display:flex;gap:8px">
+<button onclick="showTab('orodha')" id="btn-orodha" style="background:#b89a5b;color:#0d2a22">📚 ORODHA</button>
+<button onclick="showTab('kitabu')" id="btn-kitabu" style="background:rgba(255,255,255,0.2);color:white">📖 KITABU - MAMA WA VITABU (40)</button>
+</div>
+<button onclick="document.getElementById('maoni').scrollIntoView({behavior:'smooth'})" style="background:rgba(255,255,255,0.15);color:white;border:none;padding:6px 12px;border-radius:20px;font-size:11px;cursor:pointer">💬 Maoni</button>
+</div>
+
+<div id="tab-orodha" class="tab active">
+<header>
+<h1 style="font-family:Amiri,serif;margin:0;font-size:42px">أم الكتاب</h1><h2 style="font-family:Amiri,serif;margin:8px 0 0;font-size:28px;color:#d9c9a0">Umu Al Kitaab</h2><p style="font-size:18px;color:#fde68a;margin:8px 0 0;font-weight:700;letter-spacing:0.05em">MAMA WA VITABU VYA SIRI</p>
+<p style="color:#d9c9a0;margin:6px 0">Umul Al Kitaab ya Mbogo Shilingi - Mama wa Vitabu vya Siri - Mambo 40 ya Kiarabu Irabu - Herufi 28 + Siri 12</p>
+<p style="font-size:11px;color:#a7f3d0">Mwandishi: Mbogo Shilingi | mbogoshaban2026@gmail.com | 0743093316 | Dar es Salaam</p>
+</header>
+<div class="container">
+<h2 style="font-family:Amiri,serif;text-align:center;color:#0d2a22;margin:24px 0">📚 Vitabu Maktabani - Orodha Kamili</h2>
+<div class="grid" id="grid-vitabu">
+<div class="book"><div class="cover">ا</div><div class="body-card"><span class="badge">MAMA WA VITABU VYA SIRI - MAMBO 40 - HERUFI 28</span><h3 style="font-family:Amiri,serif;margin:8px 0">Umu Al Kitaab - Mama wa Vitabu vya Siri + Kitabu cha Moyo</h3><p style="font-size:13px;color:#6b7280;flex:1">Kiarabu na Irabu + Matamshi ya Kizungu + Fasiri + Dua + Herufi 28 zote zimetajwa - Zaa, Siin, Shiin, Swad, Dwad, Twa, Dhaa, Ain, Ghain, Faa, Qaaf, Kaaf, Laam, Miim, Nuun, Waw, Haa, Yaa</p><button onclick="showTab('kitabu')" style="background:#0d2a22;color:white;padding:12px;border-radius:10px;text-align:center;font-weight:700;margin-top:auto;display:block;width:100%;border:none;cursor:pointer">📖 Soma Mambo 40 Yote - Fungua Hapa</button></div></div>
+</div>
+<!-- MWANDISHI PEKEE - MAELEKEZO YAMEFICHWA - INPUT BADALA YA PROMPT -->
+<div style="text-align:center;margin:20px 0;background:#fffbeb;border:1px dashed #c9a227;padding:16px;border-radius:12px">
+<div style="font-size:11px;color:#92400e;font-weight:700;margin-bottom:8px">🔒 MAELEKEZO YA MWANDISHI PEKEE - MBOGO SHILINGI</div>
+<div style="display:flex;gap:8px;justify-content:center;align-items:center;flex-wrap:wrap">
+<input id="pass-mwandishi" type="password" placeholder="Weka password ya mwandishi" style="padding:10px 14px;border:1px solid #c9a227;border-radius:20px;font-size:12px;width:200px">
+<button onclick="funguaMwandishi()" style="background:#0d2a22;color:#fde68a;padding:10px 16px;border:none;border-radius:20px;font-size:11px;font-weight:700;cursor:pointer">🔓 FUNGUA MAELEKEZO</button>
+</div>
+<p style="font-size:10px;color:#92400e;margin-top:6px">Kwa mwandishi tu - Mbogo Shilingi</p>
+</div>
+<div id="mwandishi-panel" style="display:none;background:#0d2a22;color:white;padding:24px;border-radius:16px;margin:20px 0;text-align:left">
+<h2 style="font-family:Amiri,serif;text-align:center;color:#fde68a;font-size:22px">📝 MAELEKEZO YA MWANDISHI PEKEE - MBOGO SHILINGI</h2>
+<p style="text-align:center;color:#d9c9a0;font-size:11px">Kwa mwandishi tu - Siri</p>
+
+<div style="background:white;color:#121212;border-radius:12px;padding:16px;margin:16px 0">
+<h3 style="color:#0d2a22;font-size:13px">📌 HATUA 1: ORODHA</h3>
+<pre style="background:#fdfbf7;border:1px solid #e8e0d0;padding:12px;border-radius:8px;overflow-x:auto;font-size:10px;white-space:pre-wrap">1. Tafuta: &lt;!-- KITABU 2 - HAPA NDIPO UNAWEKA KITABU KIPYA --&gt;
+2. Ondoa &lt;!-- na --&gt;
+3. Badilisha Jina la Kitabu 2 na maelezo
+4. Save</pre>
+</div>
+
+<div style="background:white;color:#121212;border-radius:12px;padding:16px;margin:16px 0">
+<h3 style="color:#0d2a22;font-size:13px">📌 HATUA 2: CONTENT YA KITABU KIPYA</h3>
+<pre style="background:#fdfbf7;border:1px solid #e8e0d0;padding:12px;border-radius:8px;overflow-x:auto;font-size:10px;white-space:pre-wrap">1. Tafuta chini: &lt;!-- TAB KITABU 2 - SEHEMU YA KITABU KIPYA --&gt;
+2. Ondoa &lt;!-- na --&gt;
+3. Weka Mambo yako - Kiarabu Irabu + Matamshi + Fasiri + Dua
+4. ID: tab-kitabu2 = showTab('kitabu2')
+5. Ongeza button juu nav-tab</pre>
+</div>
+
+<div style="background:#fffbeb;border:1px solid #c9a227;border-radius:12px;padding:16px;margin:16px 0;color:#121212">
+<h3 style="color:#92400e;font-size:12px">📌 HATUA 3: MFANO MAMBO 10</h3>
+<p style="font-size:11px;color:#6b7280">Copy template ya Mambo 1-10 - Badilisha</p>
+</div>
+
+<div style="background:white;color:#121212;border-radius:12px;padding:16px;margin:16px 0">
+<h3 style="color:#0d2a22;font-size:13px">📌 HATUA 4: UPDATE BILA KULIPIA</h3>
+<ul style="font-size:11px;color:#374151">
+<li>tiiny.host - Upload index.html - bure</li>
+<li>appsgeyser.com - Website to APK - bure</li>
+<li>GitHub Pages - Upload - Commit - Deploy</li>
+</ul>
+</div>
+
+<div style="background:rgba(255,255,255,0.1);border-radius:10px;padding:12px;text-align:center">
+<p style="color:#fde68a;font-size:11px;font-weight:700">Mbogo Shilingi - mbogoshaban2026@gmail.com - 0743093316 - @mbogoshilingi</p>
+<p style="color:#a7f3d0;font-size:10px">Mwenye kuficha elimu atafungwa kwa moto siku ya Kiama. Sambaza.</p>
+</div>
+</div>
+<script>
+function funguaMwandishi(){
+  var input=document.getElementById('pass-mwandishi');
+  var p = input ? input.value.trim() : '';
+  if(!p){
+    // fallback prompt kama input empty
+    p=prompt('Weka password ya Mwandishi - Mbogo Shilingi:')||'';
+    p=p.trim();
+  }
+  if(p==='0743093316' || p==='mbogoshaban2026@gmail.com' || p==='0743' || p==='shilingi' || p==='Mbogo'){
+    var panel=document.getElementById('mwandishi-panel');
+    if(panel){
+      panel.style.display='block';
+      panel.scrollIntoView({behavior:'smooth'});
+      if(input) input.value='';
+    }
+  }else{
+    alert('Password si sahihi - kwa mwandishi tu');
+  }
+}
+document.addEventListener('DOMContentLoaded',function(){
+  var inp=document.getElementById('pass-mwandishi');
+  if(inp){
+    inp.addEventListener('keypress',function(e){
+      if(e.key==='Enter'){ funguaMwandishi(); }
+    });
+  }
+});
+</script>
+
+
+
+
+<div style="background:white;border:1px solid #e8e0d0;border-radius:12px;padding:20px;margin:40px 0;text-align:center">
+<h4 style="color:#0d2a22;font-size:12px;letter-spacing:0.2em;margin:0">MAWASILIANO YA MWANDISHI</h4>
+<p style="font-size:13px;color:#374151;margin:10px 0 0">Email: <a href="mailto:mbogoshaban2026@gmail.com" style="color:#0d2a22;font-weight:700">mbogoshaban2026@gmail.com</a> | WhatsApp: <a href="https://wa.me/255743093316" style="color:#0d2a22;font-weight:700">0743093316</a><br>Instagram: @mbogoshilingi | Facebook: Mbogo Shilingi - Dar es Salaam</p>
+</div>
+</div>
+</div>
+
+<div id="tab-kitabu" class="tab">
+<div class="container" style="padding-top:20px">
+<div class="wasifu" id="muqadima">
+<h3 style="font-size:11px;letter-spacing:0.3em;color:#0d2a22">MUQADIMA - UTANGULIZI WA MWANDISHI</h3>
+<p><strong>Umu Al Kitaab - Mama wa Vitabu vya Siri - ni mama wa vitabu vyote vya siri.</strong> Ndani yake kuna herufi 28 za Kiarabu zenye nguvu ya kiroho tangu enzi za Manabii. Kila herufi ina maana mbili: dhahiri na batini. Kuanzia Mambo 13 na kuendelea, kila herufi imetajwa wazi: Zaa (ز), Siin (س), Shiin (ش), Swad (ص), Dwad (ض), Twa (ط), Dhaa (ظ), Ain (ع), Ghain (غ), Faa (ف), Qaaf (ق), Kaaf (ك), Laam (ل), Miim (م), Nuun (ن), Waw (و), Haa (ه), Yaa (ي).<br><br><strong>Mwandishi:</strong> Mbogo Shilingi - Dar es Salaam<br><strong>Wasifu:</strong> Mtafiti wa elimu ya siri za herufi na tafsiri za Quran - Mambo 40 kamili - Herufi 28 + Siri 12</p>
+</div>
+
+
+
+
+
+
+<div class="moyo" style="padding:32px">
+<h2 class="display" style="text-align:center;color:#0d2a22">🫀 Kitabu cha Moyo - Ujue Moyo wa Binadamu na Siri za Kibri - Pambanuzi Kamili</h2>
+
+<div class="aya-box" dir="rtl" style="text-align:right;font-size:22px">أَلَا وَإِنَّ فِي الْجَسَدِ مُضْغَةً إِذَا صَلُحَتْ صَلُحَ الْجَسَدُ كُلُّهُ وَإِذَا فَسَدَتْ فَسَدَ الْجَسَدُ كُلُّهُ أَلَا وَهِيَ الْقَلْبُ - متفق عليه</div>
+<p style="background:#fffbeb;padding:10px;border-radius:8px;font-style:italic">Ala wa inna fil jasadi mudgha - idha saluhat saluhal jasadu kulluhu - wa idha fasadat fasadal jasadu kulluhu - ala wa hiya al qalb - Ndani ya mwili kuna kipande cha nyama, kikitengenea mwili wote unatengenea, ni moyo.</p>
+
+<!-- MAELEZO YA AWALI - USIYAKATE - LITA ZA DAMU -->
+<div style="background:white;border:1px solid #e8e0d0;border-radius:12px;padding:20px;margin:20px 0">
+<h3 style="color:#0d2a22;font-size:14px;letter-spacing:0.1em">🔬 UJUE MOYO - MAELEZO YA AWALI - KISAYANSI NA KIROHO</h3>
+<p><strong>Moyo sio pampu tu:</strong> Ni kiungo cha kwanza kuumbwa tumboni mwa mama siku ya 18 - kabla ya ubongo - uzito wake gramu 300 tu - saizi ya ngumi yako - lakini kazi yake ni kubwa: inapiga mara 100,000 kwa siku - bila kupumzika - inasukuma lita 7,500 za damu kila siku - kilomita 100,000 za mishipa - damu inazunguka mwili wote kwa sekunde 60 tu.</p>
+<p><strong>Siri ya Moyo:</strong> Lakini siri yake kubwa sio kusukuma damu - siri yake ni <strong>Kufahamu na Kuona</strong>. Allah anasema: <span dir="rtl" style="font-family:Amiri,serif;font-size:18px">لَهُمْ قُلُوبٌ لَا يَفْقَهُونَ بِهَا - الأعراف 179</span> - Lahum qulubun la yafqahuna biha - Wana mioyo lakini hawafahamu kwa hiyo - kazi ya moyo ni kufahamu haki na batili, sio ubongo tu.</p>
+
+<p><strong>Aina 4 za Moyo katika Quran:</strong><br>
+1. <strong>Qalb</strong> - قَلْبٌ - unaogeuka-geuka mara 70 kwa siku - ndiyo maana inaitwa Qalb (kugeuka-geuka) - leo una Imani kesho una shaka - <em>Ya Muqallibal qulub thabbit qalbi ala dinik</em><br>
+2. <strong>Fuad</strong> - فُؤَادٌ - unaowaka kwa nuru - mahali pa kuona ndoto za kweli na ilhamu - Allah anasema <span dir="rtl">مَا كَذَبَ الْفُؤَادُ مَا رَأَى</span> - Fuad haikusema uongo iliyoyaona<br>
+3. <strong>Sadr</strong> - صَدْرٌ - kifua - mahali pa wasiwasi na shari - <span dir="rtl">يُوَسْوِسُ فِي صُدُورِ النَّاسِ - الناس 5</span> - Yuwaswisu fi sudurin nas - Sadr ni uwanja wa vita kati ya Malaika na Shetani<br>
+4. <strong>Lubb</strong> - لُبٌّ - kiini cha moyo - mahali pa akili safi kabisa - <span dir="rtl">أُولُو الْأَلْبَابِ</span> - Ulu al albab - wenye akili zilizopo ndani ya kiini cha moyo - ndipo siri za herufi 28 zinafahamika</p>
+
+<p><strong>Neuroscience ya Kisasa - 2024:</strong> Moyo una neurons 40,000 - heart-brain - una mfumo wake wa neva - unaitwa "ubongo mdogo moyoni" - 90% ya taarifa zinatoka moyoni kwenda ubongoni, si ubongo kwenda moyoni - ndiyo maana ukiwa na hofu moyo unadunda kwanza, kisha ubongo unafahamu. Wanasayansi wa HeartMath Institute wamethibitisha moyo una shamba la umeme (electromagnetic field) mara 60 kubwa kuliko ubongo - linafikia mita 3 kutoka mwilini - ndiyo maana ukikaa karibu na mtu mwenye moyo safi unahisi amani.</p>
+
+<p><strong>Magonjwa 4 ya Moyo - Quran inayatambua:</strong><br>
+1. <strong>Qaswa</strong> - قَسْوَةٌ - mgumu kama jiwe - <span dir="rtl">ثُمَّ قَسَتْ قُلُوبُكُمْ فَهِيَ كَالْحِجَارَةِ - البقرة 74</span> - Moyo mgumu hauingii Quran<br>
+2. <strong>Maradh</strong> - مَرَضٌ - mgonjwa - una shaka na nifaaq - <span dir="rtl">فِي قُلُوبِهِمْ مَرَضٌ - البقرة 10</span><br>
+3. <strong>Zaygh</strong> - زَيْغٌ - uliopotoka baada ya kuongoka - <span dir="rtl">رَبَّنَا لَا تُزِغْ قُلُوبَنَا - آل عمران 8</span><br>
+4. <strong>Khitm / Tab'u / Raan</strong> - خَتْمٌ - uliofungwa muhuri - <span dir="rtl">خَتَمَ اللهُ عَلَى قُلُوبِهِمْ - البقرة 7</span> na <span dir="rtl">رَانَ عَلَى قُلُوبِهِمْ - المطففين 14</span> - Kutu ya dhambi</p>
+</div>
+
+<div style="background:#fdfbf7;border:2px solid #0d2a22;border-radius:14px;padding:24px;margin:24px 0">
+<h3 style="color:#0d2a22;font-family:Amiri,serif;text-align:center;font-size:20px">📜 AYA ZA MOYO - PAMBANUZI KAMILI YA KILA AYA - NJIA PANANA</h3>
+
+<div style="background:white;border:1px solid #e8e0d0;border-radius:12px;padding:18px;margin:18px 0">
+<h4 style="color:#0d2a22">1. Utulivu wa Moyo - Ar-Ra'd 28</h4>
+<div class="aya-box" dir="rtl">الَّذِينَ آمَنُوا وَتَطْمَئِنُّ قُلُوبُهُمْ بِذِكْرِ اللهِ ۗ أَلَا بِذِكْرِ اللهِ تَطْمَئِنُّ الْقُلُوبُ</div>
+<p style="background:#fffbeb;padding:10px;border-radius:8px;margin-top:10px"><em>Alladhina amanu watatma'innu qulubuhum bi dhikrillahi - Ala bi dhikrillahi tatma'innul qulub</em> - Walioamini na mioyo yao hutulizana kwa kumtaja Allah - Jueni kwa kumtaja Allah mioyo hutulizana.<br><strong>Pambanuzi - Ibn Kathir:</strong> Moyo kama bahari - ina mawimbi ya wasiwasi, hofu, hasad, kibri. Dawa yake sio pesa, sio cheo - dawa yake ni Dhikr. Ukisema Subhanallah mara 100, mawimbi yanatulia. Moyo ukitulizana, ndipo siri za herufi zinaingia.<br><strong>Funzo:</strong> Kila siku asubuhi mara 100: Ya Salam - kwa moyo kutulizana. Kabla ya kusoma herufi yoyote, tuliza moyo kwanza.</p>
+</div>
+
+<div style="background:white;border:1px solid #e8e0d0;border-radius:12px;padding:18px;margin:18px 0">
+<h4 style="color:#0d2a22">2. Moyo Mgonjwa - Maradh - Baqarah 10</h4>
+<div class="aya-box" dir="rtl">فِي قُلُوبِهِمْ مَرَضٌ فَزَادَهُمُ اللهُ مَرَضًا ۖ وَلَهُمْ عَذَابٌ أَلِيمٌ</div>
+<p style="background:#fffbeb;padding:10px;border-radius:8px;margin-top:10px"><em>Fi qulubihim maradhun fazadahumullahu maradha</em> - Katika mioyo yao mna ugonjwa, Allah akawazidishia ugonjwa.<br><strong>Pambanuzi:</strong> Maradh ni aina mbili: (1) Shaka katika dini (2) Nifaaq - unaonyesha wema mbele ya watu lakini moyoni chuki. Allah anasema ukiwa na ugonjwa na hutatubu, anauzidisha. Kama mgonjwa asiyekunywa dawa.<br><strong>Alama:</strong> Hupendi Quran, hupendi wacha Mungu, unapenda kusengenya, una wivu. Dawa: Tauba, Baqarah kila siku, kula halali.<br><strong>Funzo:</strong> Kabla ya herufi za siri, jichunguze moyo una maradhi? Ondoa hasad kwanza.</p>
+</div>
+
+<div style="background:white;border:1px solid #e8e0d0;border-radius:12px;padding:18px;margin:18px 0">
+<h4 style="color:#0d2a22">3. Moyo Mgumu - Qaswa - Baqarah 74</h4>
+<div class="aya-box" dir="rtl">ثُمَّ قَسَتْ قُلُوبُكُمْ مِنْ بَعْدِ ذَٰلِكَ فَهِيَ كَالْحِجَارَةِ أَوْ أَشَدُّ قَسْوَةً</div>
+<p style="background:#fffbeb;padding:10px;border-radius:8px;margin-top:10px"><em>Thumma qasat qulubukum - fahiya kal-hijarati aw ashadddu qaswah</em> - Kisha mioyo yenu iligumu kama mawe au zaidi.<br><strong>Sababu 5 za moyo kugumu:</strong> (1) Kula haramu (2) Kuacha swala (3) Ghiba (4) Kutokulia machozi (5) Kibri.<br><strong>Ibn Qayyim:</strong> Moyo mgumu kama jiwe - maji ya Quran hayamwingii. Ukimwaga maji juu ya jiwe, yanateleza. Quran kwa moyo mgumu haina athari. Dawa: Kulia usiku, kula kidogo, kukaa na mayatima, kutembelea makaburi.<br><strong>Funzo:</strong> Moyo mgumu hawezi kupata siri za herufi. Herufi zinahitaji moyo laini kama pamba.</p>
+</div>
+
+<div style="background:white;border:1px solid #e8e0d0;border-radius:12px;padding:18px;margin:18px 0">
+<h4 style="color:#0d2a22">4. Muhuri wa Moyo - Khitm - Baqarah 7</h4>
+<div class="aya-box" dir="rtl">خَتَمَ اللهُ عَلَىٰ قُلُوبِهِمْ وَعَلَىٰ سَمْعِهِمْ ۖ وَعَلَىٰ أَبْصَارِهِمْ غِشَاوَةٌ</div>
+<p style="background:#fffbeb;padding:10px;border-radius:8px;margin-top:10px"><em>Khatama Allahu ala qulubihim wa ala sam'ihim wa ala absarihim ghishawah</em> - Allah amepiga muhuri juu ya mioyo yao na masikio yao, na juu ya macho yao kuna pazia.<br><strong>Tafsir:</strong> Mtu anapoendelea kufanya dhambi bila tauba, Allah anampiga muhuri. Muhuri ni mfuniko - nuru haiingii. Macho yanaona Quran lakini haifahamu.<br><strong>Ibn Abbas:</strong> Muhuri huanza kama doa jeusi dogo moyoni kila dhambi. Ukifanya istighfar linafutika. Usipofanya, linaongezeka mpaka moyo wote mweusi - ndipo unapigwa muhuri.<br><strong>Funzo:</strong> Kila dhambi fuata na Astaghfirullah mara 70.</p>
+</div>
+
+<div style="background:white;border:1px solid #e8e0d0;border-radius:12px;padding:18px;margin:18px 0">
+<h4 style="color:#0d2a22">5. Raan - Kutu ya Dhambi - Mutaffifin 14</h4>
+<div class="aya-box" dir="rtl">كَلَّا ۖ بَلْ ۜ رَانَ عَلَىٰ قُلُوبِهِمْ مَا كَانُوا يَكْسِبُونَ</div>
+<p style="background:#fffbeb;padding:10px;border-radius:8px;margin-top:10px"><em>Kalla bal rana ala qulubihim ma kanu yaksibun</em> - Dhambi zimefunika mioyo kama kutu.<br><strong>Pambanuzi:</strong> Raan ni kutu ya chuma. Moyo pia una kutu: uongo, ghiba, hasad, kibri, haramu. Mtume ﷺ alisema: Moyo unapata kutu kama chuma, na kung'arisha kwake ni Quran na kukumbuka mauti.<br><strong>Dawa:</strong> Istighfar 100 kila siku, Suratul Hadid, kula halali, Tahajjud.<br><strong>Funzo:</strong> Moyo wenye Raan haoni siri za herufi. Herufi 28 zinahitaji moyo safi kama kioo.</p>
+</div>
+
+<div style="background:white;border:1px solid #e8e0d0;border-radius:12px;padding:18px;margin:18px 0">
+<h4 style="color:#0d2a22">6. Waswasi Kifuani - Sadr - An-Nas 5</h4>
+<div class="aya-box" dir="rtl">الَّذِي يُوَسْوِسُ فِي صُدُورِ النَّاسِ - مِنَ الْجِنَّةِ وَالنَّاسِ</div>
+<p style="background:#fffbeb;padding:10px;border-radius:8px;margin-top:10px"><em>Alladhi yuwaswisu fi sudurin nas - minal jinnati wan nas</em> - Anayewatia wasiwasi katika vifua vya watu, miongoni mwa majini na watu.<br><strong>Pambanuzi:</strong> Sadr ni kifua - uwanja wa vita kati ya Malaika na Shetani. Malaika anaweka ilhamu ya kheri, Shetani anaweka wasiwasi wa shari. Moyo ukiwa na kibri, Shetani anapata nguvu. Moyo ukiwa na tawadhu, Malaika anapata nguvu.<br><strong>Funzo:</strong> Kabla ya kusoma herufi, sema Audhu billahi minash shaytani rajiim mara 10 - kufukuza wasiwasi.</p>
+</div>
+
+<div style="background:white;border:1px solid #e8e0d0;border-radius:12px;padding:18px;margin:18px 0">
+<h4 style="color:#0d2a22">7. Ulu Al-Albab - Lubb - Kiini cha Moyo</h4>
+<div class="aya-box" dir="rtl">إِنَّ فِي ذَٰلِكَ لَذِكْرَىٰ لِأُولِي الْأَلْبَابِ - الزمر 21</div>
+<p style="background:#fffbeb;padding:10px;border-radius:8px;margin-top:10px"><em>Li ulil albab</em> - Kwa wenye akili zilizomo ndani ya kiini cha moyo (Lubb).<br><strong>Pambanuzi:</strong> Lubb ndio kiini cha moyo - mahali pa akili safi kabisa. Watu wengi wana Qalb lakini hawana Lubb. Lubb ndipo siri za herufi zinafahamika. Kufikia Lubb inahitaji mujahada - kula kidogo, kulala kidogo, kusema kidogo, kukaa faragha na Allah.<br><strong>Funzo:</strong> Herufi 28 zote zimeandikwa ndani ya Lubb - Alif kwenye utosi, Yaa kwenye kiini. Ukifikia Lubb, unasoma bila kitabu.</p>
+</div>
+
+<div style="background:white;border:1px solid #e8e0d0;border-radius:12px;padding:18px;margin:18px 0">
+<h4 style="color:#0d2a22">8. Dua ya Moyo Kutopotoka - Al-Imran 8</h4>
+<div class="aya-box" dir="rtl">رَبَّنَا لَا تُزِغْ قُلُوبَنَا بَعْدَ إِذْ هَدَيْتَنَا وَهَبْ لَنَا مِنْ لَدُنْكَ رَحْمَةً إِنَّكَ أَنْتَ الْوَهَّابُ</div>
+<p style="background:#fffbeb;padding:10px;border-radius:8px;margin-top:10px"><em>Rabbana la tuzigh qulubana ba'da idh hadaitana wahab lana min ladunka rahmah innaka antal Wahhab</em> - Mola wetu usiipotoze mioyo yetu baada ya kutuongoza, na utupe kutoka kwako rehema, hakika wewe ni Mtoa zawadi.<br><strong>Pambanuzi:</strong> Moyo unageuka mara 70 kwa siku - leo una Imani kesho una shaka. Ndiyo maana dua hii ni muhimu. Mtume ﷺ alikuwa akisema dua hii sana: Ya Muqallibal qulub thabbit qalbi ala dinik - Ewe Mgeuza nyoyo ithibitishe moyo wangu.<br><strong>Funzo:</strong> Soma dua hii mara 7 asubuhi na jioni - kabla ya kusoma herufi za siri.</p>
+</div>
+
+</div>
+
+<div style="background:#0d2a22;color:white;border-radius:14px;padding:24px;margin:24px 0">
+<h3 style="color:#fde68a;text-align:center;font-size:18px">🔥 AYA ZA KIBRI - MOYO NA KIBRI CHA MWANADAMU - PAMBANUZI PANANA</h3>
+
+<div style="background:#153d32;border-radius:10px;padding:16px;margin:14px 0">
+<h4 style="color:#fde68a">Kibri - Allah Hampendi Mwenye Kibri - Luqman 18</h4>
+<div class="aya-box" style="background:#0a2540" dir="rtl">وَلَا تُصَعِّرْ خَدَّكَ لِلنَّاسِ وَلَا تَمْشِ فِي الْأَرْضِ مَرَحًا ۖ إِنَّ اللهَ لَا يُحِبُّ كُلَّ مُخْتَالٍ فَخُورٍ</div>
+<p style="color:#d9c9a0;margin-top:10px"><em>Wala tusa''ir khaddaka lin nasi wala tamshi fil ardhi maraha - Innallaha la yuhibbu kulla mukhtalin fakhur</em> - Usimgeuzie watu shavu lako kwa dharau na usitembee kwa maringo, Allah hampendi kila mwenye kujivuna.<br><strong>Pambanuzi:</strong> Luqman Hakim alimwambia mwanawe: Mwanangu usigeuze shavu kwa watu ukiwa na kibri - usipuuze salamu za maskini, usikatae kukaa na maskini, usijifanye bora. Tembea kwa unyenyekevu. Alama za kibri: Kupenda kukaa mbele, kupenda watu wakusimamie, kupenda sifa, kutokubali ushauri, kujiona una elimu kuliko wengine. Hizi zote ni sumu ya moyo.<br><strong>Funzo:</strong> Mtafuta siri za herufi akiona ana kibri, ajifunze unyenyekevu kwanza. Kibri na siri hazikai pamoja.</p>
+</div>
+
+<div style="background:#153d32;border-radius:10px;padding:16px;margin:14px 0">
+<h4 style="color:#fde68a">Kibri - Kanzu ya Allah - Hadith Qudsi - Muslim</h4>
+<div class="aya-box" style="background:#0a2540" dir="rtl">الْكِبْرِيَاءُ رِدَائِي وَالْعَظَمَةُ إِزَارِي فَمَنْ نَازَعَنِي وَاحِدًا مِنْهُمَا قَذَفْتُهُ فِي النَّارِ</div>
+<p style="color:#d9c9a0;margin-top:10px"><em>Al-kibriyau ridai wal-azamatu izari faman naza'ani wahidan minhuma qadaftuhu fin naar</em> - Kibri ni joho langu na utukufu ni kikoi changu, anayenishindania moja kati ya hivyo nitamtupa motoni - Hadith Qudsi.<br><strong>Pambanuzi:</strong> Allah anasema Kibri ni vazi lake pekee - hakuna binadamu anayeruhusiwa kuvaa vazi la Allah. Kama askari akivaa joho la jenerali, atafungwa. Vivyo mwanadamu akivaa kibri atatupwa motoni.<br><strong>Maana halisi ya kibri:</strong> Mtume ﷺ alisema: <em>Al-kibru batarul haqqi wa ghamtun nas</em> - Kibri ni kukataa haki na kuwadharau watu. Ukiona mtu anakwambia haki lakini unakataa kwa sababu yeye ni maskini, hiyo ni kibri.</p>
+</div>
+
+<div style="background:#153d32;border-radius:10px;padding:16px;margin:14px 0">
+<h4 style="color:#fde68a">Iblis - Baba wa Kibri - Al-A'raf 12</h4>
+<div class="aya-box" style="background:#0a2540" dir="rtl">قَالَ أَنَا خَيْرٌ مِنْهُ خَلَقْتَنِي مِنْ نَارٍ وَخَلَقْتَهُ مِنْ طِينٍ</div>
+<p style="color:#d9c9a0;margin-top:10px"><em>Qala ana khayrun minhu khalaqtani min narin wa khalaqtahu min tiin</em> - Akasema (Iblis): Mimi ni bora kuliko yeye, umeniumba mimi kwa moto na umemumba yeye kwa udongo - Al-A'raf 12 - Maneno ya kwanza ya kibri yaliyosemwa mbinguni. Iblis alikuwa mwalimu wa Malaika, lakini kibri kimemtoa Peponi. Kila mwenye kibri anaandamana na Iblis.<br><strong>Funzo:</strong> Usiseme mimi ni bora kuliko fulani - hata kwa moyoni. Hicho ni maneno ya Iblis.</p>
+</div>
+</div>
+
+<div style="background:white;border:2px solid #c9a227;border-radius:14px;padding:24px;margin:24px 0">
+<h3 style="color:#0d2a22;text-align:center">🕯️ WANAZUONI WA SIRI - IBN SIRIN NA WENGINEO - PAMBANUZI PANANA</h3>
+
+<div style="background:#fdfbf7;border:1px solid #e8e0d0;border-radius:10px;padding:16px;margin:14px 0">
+<h4 style="color:#0d2a22">1. Ibn Sirin (رحمه الله) - 653-729H - Imam wa Ndoto na Moyo</h4>
+<div class="aya-box" dir="rtl">الْقَلْبُ يَرَى مَا لَا تَرَى الْعَيْنُ، وَالْقَلْبُ إِذَا صَفَا رَأَى، وَإِذَا تَكَبَّرَ عَمِيَ - ابن سيرين</div>
+<p style="background:#fffbeb;padding:10px;border-radius:8px;margin-top:10px"><strong>Pambanuzi Kamili:</strong> Al-qalbu yara ma la tara al-ayn - Moyo unaona yasiyoonwa na jicho. Ukisafika unaona ndoto za kweli na siri za herufi. Ukijivuna unapofuka. Ibn Sirin alikuwa na ndoto za kweli - alikuwa akiona siri za herufi katika ndoto. Alisema: "Moyo ni kama chupa - ukijaa kibri haujai nuru. Utupu wa kibri ndio ujazo wa nuru. Moyo wa mwanazuoni mwenye kibri ni kama chupa iliyojaa mavi - hata ukimwaga asali humo, asali inachafuka."<br><strong>Maneno mengine:</strong> "Ittaqullah fis sirri kama tattaqihi fil alaniyah" - Mche Allah sirini kama dhahirini. "Al-qalbu idha safa, raa al-ghayba" - Moyo ukisafika unaona ghaibu. Dawa aliyokuwa akitoa: Kula halali, kulia usiku, kutofanya ghiba, kuacha kujiona bora.</p>
+</div>
+
+<div style="background:#fdfbf7;border:1px solid #e8e0d0;border-radius:10px;padding:16px;margin:14px 0">
+<h4 style="color:#0d2a22">2. Imam Ghazali - Ihya Ulumiddin - Hujjatul Islam - 1058-1111H</h4>
+<div class="aya-box" dir="rtl">عَجِبْتُ لِمَنْ يَبْحَثُ عَنِ الطَّهَارَةِ فِي الثَّوْبِ وَيَنْسَى طَهَارَةَ الْقَلْبِ - الغزالي</div>
+<p style="background:#fffbeb;padding:10px;border-radius:8px;margin-top:10px"><strong>Pambanuzi:</strong> Ajibtu liman yabhasu anit taharati fith thawbi wayansa taharatal qalb - Nastaajabia mtu anayetafuta usafi wa nguo na kusahau usafi wa moyo. Katika Ihya, Juzuu ya 3, Ghazali alieleza moyo ni kama kioo - ukisafishwa unaakisi nuru ya Arshi. Lakini kioo kina vumbi 4: Shahwa (matamanio), Ghadhab (hasira), Kibri (majivuno), Hasad (wivu). Kibri ndio vumbi kubwa zaidi - linazuia kioo kuakisi nuru. Dawa: (1) Dhikr ya Ya Tawwab mara 100 (2) Kufikiri mauti kila siku (3) Kuhudumia maskini (4) Kula kidogo na kulala kidogo.</p>
+</div>
+
+<div style="background:#fdfbf7;border:1px solid #e8e0d0;border-radius:10px;padding:16px;margin:14px 0">
+<h4 style="color:#0d2a22">3. Ibn Qayyim Al-Jawziyya - Madarij As-Salikin - 1292-1350H</h4>
+<div class="aya-box" dir="rtl">الْقَلْبُ يَمْرَضُ كَمَا يَمْرَضُ الْبَدَنُ، وَشِفَاؤُهُ فِي التَّوْبَةِ وَالْقُرْآنِ</div>
+<p style="background:#fffbeb;padding:10px;border-radius:8px;margin-top:10px"><strong>Pambanuzi:</strong> Moyo unaumwa kama mwili. Dalili za ugonjwa: Hupendi Quran, hupendi dhikr, unapenda ghiba. Tiba yake: Tauba ya kweli, Quran, kula halali, kukaa na wacha Mungu. Alisema: "Man arafa qalbah arafa Rabbah" - Mwenye kuujua moyo wake anamjua Mola wake. Moyo una maisha na mauti - moyo hai ni wenye dhikr, moyo mfu ni wenye ghafla. Kibri inaua moyo kama sumu inavyoua mwili. "Al-kibru yughliqu baban min abwabi al-jannah" - Kibri inafunga mlango wa Peponi.</p>
+</div>
+
+<div style="background:#fdfbf7;border:1px solid #e8e0d0;border-radius:10px;padding:16px;margin:14px 0">
+<h4 style="color:#0d2a22">4. Ibn Arabi - Futuhat Makkiyah - Sheikh Al-Akbar - 1165-1240H</h4>
+<div class="aya-box" dir="rtl">الْقَلْبُ بَيْتُ الرَّبِّ، فَطَهِّرْهُ لِيَسْكُنَهُ، وَالْقَلْبُ عَرْشُ اللهِ الْأَصْغَرُ</div>
+<p style="background:#fffbeb;padding:10px;border-radius:8px;margin-top:10px"><strong>Pambanuzi:</strong> Al-qalbu baytur Rabb - Moyo ni nyumba ya Mola, itakase ili akae. Moyo ni Arshi ndogo duniani - kama Arshi kubwa inavyobeba Allah kwa utukufu, moyo safi unabeba maarifa ya Allah. Qalb inaitwa Qalb kwa kugeuka mara 70 kwa siku, kila kugeuka kuna tajalli mpya. Mwenye kibri moyo wake ni kama nyumba iliyojaa sanamu, Allah haingii. Ibn Arabi alisema: Herufi 28 za Kiarabu zote zimeandikwa moyoni mwa mwanadamu - Alif ni kwenye utosi wa moyo, Yaa ni kwenye kiini.</p>
+</div>
+
+<div style="background:#fdfbf7;border:1px solid #e8e0d0;border-radius:10px;padding:16px;margin:14px 0">
+<h4 style="color:#0d2a22">5. Jalaluddin Rumi - Mathnawi - 1207-1273H</h4>
+<div class="aya-box" dir="rtl">دِلْ رَا خُدَا خَانَهْ نِگَهْ دَارْ، وَزْ غَيْرِ خُدَا پَاكْ دَارْ</div>
+<p style="background:#fffbeb;padding:10px;border-radius:8px;margin-top:10px"><strong>Pambanuzi:</strong> Dil ra Khuda khanah nigah dar - Moyo uutunze kama nyumba ya Allah, utakase na yasiyo Allah. Rumi alisema moyo ni Kaaba ya ndani - ukiwa na sanamu za kibri na hasad ndani yake, Hija yako haikubaliwi. Alisema: "Tu dil ra safi kun ze kibri o hasad, ta bibini asrare Alif o Abjad" - Takasa moyo na kibri na hasad, ndipo utaona siri za Alif na Abjad. Kibri ni kama moshi - ukijaa moshi ndani ya nyumba, mwanga hauingii.</p>
+</div>
+
+</div>
+
+<div class="funzo-box" style="background:#fffbeb;border-left:6px solid #0d2a22;padding:16px"><p><strong>Muhtasari wa Funzo la Moyo na Kibri:</strong> Kabla ya kujifunza herufi 28 na siri 7 za Fatiha, fanya haya 7: (1) Tauba ya kweli kwa dhambi zote (2) Istighfar mara 100 kila siku (3) Dhikr Ya Tawwab Ya Quddus mara 100 (4) Kula halali tu (5) Acha ghiba na kibri (6) Hudumia maskini (7) Amka Tahajjud. Moyo ukisafika, herufi zitafunguka zenyewe bila kusoma vitabu vingi. Moyo chafu haingii siri, kama chupa chafu haingii maziwa safi. Kibri ndio kizuizi kikubwa - Iblis alifukuzwa kwa kusema Ana khayrun minhu - Mimi ni bora kuliko yeye.</p></div>
+
+<div class="aya-box" dir="rtl" style="text-align:right;font-size:20px;margin-top:20px">أَلَا بِذِكْرِ اللهِ تَطْمَئِنُّ الْقُلُوبُ - وَمَنْ تَزَكَّىٰ فَإِنَّمَا يَتَزَكَّىٰ لِنَفْسِهِ - فَإِنَّهَا لَا تَعْمَى الْأَبْصَارُ وَلَٰكِنْ تَعْمَى الْقُلُوبُ الَّتِي فِي الصُّدُورِ - الحج 46</div>
+<div class="dua-box" dir="rtl" style="text-align:right;margin-top:16px"><p style="font-size:18px">رَبَّنَا لَا تُزِغْ قُلُوبَنَا بَعْدَ إِذْ هَدَيْتَنَا وَهَبْ لَنَا مِنْ لَدُنْكَ رَحْمَةً - يَا مُقَلِّبَ الْقُلُوبِ ثَبِّتْ قَلْبِي عَلَى دِينِكَ - يَا حَيُّ يَا قَيُّومُ بِرَحْمَتِكَ أَسْتَغِيثُ</p></div>
+<p style="background:#0d2a22;color:white;padding:10px;border-radius:8px;margin-top:10px">Dua ya Moyo - Rabbana la tuzigh qulubana - Ya Muqallibal qulub thabbit qalbi ala dinik - mara 7 kila siku asubuhi na jioni - kwa moyo kutogeuka na kibri kuondoka.</p>
+</div>
+
+
+
+
+
+
+
+<div class="moyo" style="background:linear-gradient(135deg,#ffffff,#fcfaf6);border:2px solid #0d2a22;padding:32px;margin:40px 0" id="fatiha">
+<h2 class="display" style="text-align:center;color:#0d2a22;font-size:26px">📖 SIRI ZA AYA 7 ZA SURATUL FAATIHA - UMMU AL KITAB - SAB'UL MATHANI</h2>
+
+<div class="aya-box" dir="rtl" style="text-align:center;font-size:24px">بِسْمِ اللهِ الرَّحْمَٰنِ الرَّحِيمِ - أُمُّ الْكِتَابِ - السَّبْعُ الْمَثَانِي</div>
+<p style="background:#fffbeb;padding:12px;border-radius:8px;text-align:center"><strong>Fatiha ndio Ummu Al Kitaab - Mama wa Vitabu vyote - na ni Sab'ul Mathani - Saba zinazosomwa kurudiwa.</strong> Mtume ﷺ alisema: "Ummu Al Quran hiya Sab'ul Mathani wal Quranul Adhim" - Bukhari. Kila herufi ya Fatiha ina siri - jumla herufi 139 - na kila aya ina siri yake ya kiroho - Ibn Sirin alisema: "Man qara'a Fatiha bi fahmin, futihat lahu abwabu as-samaa" - Mwenye kusoma Fatiha kwa fahamu, milango ya mbingu inafunguka.</p>
+
+<div style="background:#0d2a22;color:white;border-radius:14px;padding:24px;margin:20px 0;text-align:center">
+<h3 style="color:#fde68a;font-family:Amiri,serif">Hadith - Fadhila za Fatiha</h3>
+<div class="aya-box" style="background:#153d32" dir="rtl">إِذَا قَرَأْتَ الْفَاتِحَةَ فَكَأَنَّمَا قَرَأْتَ ثُلُثَ الْقُرْآنِ، وَإِذَا قَرَأْتَهَا سَبْعَ مَرَّاتٍ فُتِحَتْ لَكَ أَبْوَابُ الرِّزْقِ</div>
+<p style="color:#d9c9a0"><em>Idha qara'tal Fatiha faka annama qara'ta thuluthal Quran, wa idha qara'taha sab'a marratin futihat laka abwabur rizq</em> - Ukisoma Fatiha ni kama umesoma thuluthi ya Quran, na ukisoma mara 7 milango ya riziki inafunguka - Riwaya ya wanazuoni wa siri.</p>
+</div>
+
+<!-- AYA 1 -->
+<div style="background:white;border:2px solid #0d2a22;border-radius:12px;padding:20px;margin:20px 0">
+<div style="display:flex;justify-content:space-between;align-items:center"><span style="background:#0d2a22;color:#fde68a;padding:6px 14px;border-radius:20px;font-size:12px;font-weight:700">AYA 1 / 7</span><span style="background:#fffbeb;border:1px solid #c9a227;padding:6px 14px;border-radius:20px;font-size:11px">BISMILLAH - MLANGO WA KILA JAMBO</span></div>
+<h3 style="font-family:Amiri,serif;color:#0d2a22;margin:14px 0">بِسْمِ اللهِ الرَّحْمَٰنِ الرَّحِيمِ</h3>
+<div class="aya-box" dir="rtl" style="text-align:right;font-size:22px">بِسْمِ اللهِ الرَّحْمَٰنِ الرَّحِيمِ</div>
+<div class="block"><h4>Matamshi</h4><p style="background:#fffbeb;padding:10px;border-radius:8px"><em>Bismillahirrahmanirrahim</em> - Kwa jina la Allah Mwingi wa Rehema Mwenye Kurehemu.</p></div>
+<div class="block"><h4>Pambanuzi - Tafsir na Siri</h4><div class="funzo-box"><p><strong>Ibn Abbas:</strong> Bismillah ni mlango wa kila jambo - ukisema Bismillah kabla ya jambo lolote, Shetani anakimbia maili 40.<br><strong>Siri:</strong> Herufi 19 - idadi ya Malaika wa Jahannam 19 - mwenye kusoma Bismillah mara 19 kila siku, Malaika 19 wanamlinda na moto. Jumla ya herufi za Bismillah 19 - ndiyo siri ya ulinzi.<br><strong>Ibn Sirin:</strong> Bismillah ndio Ismullahi Al-Adham - Jina kubwa la Allah liko ndani ya Bismillah. Mwenye kusoma Bismillah mara 786 (hisabu ya Abjad) kila siku kwa siku 40, dua yake haikataliwi.<br><strong>Matumizi:</strong> Andika Bismillah mara 1 kwenye karatasi nyeupe na ubebe mfukoni - ni hirizi ya kwanza - inalinda na hasad na sihiri. Soma Bismillah mara 21 kabla ya kulala - unaona ndoto za kweli.<br><strong>Funzo:</strong> Kila Mambo ya Umu Al Kitaab unaanza na Bismillah - bila Bismillah hakuna baraka.</p></div></div>
+<div class="dua-box" dir="rtl" style="text-align:right"><p>بِسْمِ اللهِ الَّذِي لَا يَضُرُّ مَعَ اسْمِهِ شَيْءٌ فِي الْأَرْضِ وَلَا فِي السَّمَاءِ</p></div><p style="background:#0d2a22;color:white;padding:8px;border-radius:8px">Bismillahil ladhi la yadhurru ma'a ismihi shay'un fil ardhi wala fis sama - mara 3 asubuhi na jioni - kwa hifdhi.</p>
+</div>
+
+<!-- AYA 2 -->
+<div style="background:white;border:2px solid #0d2a22;border-radius:12px;padding:20px;margin:20px 0">
+<div style="display:flex;justify-content:space-between;align-items:center"><span style="background:#0d2a22;color:#fde68a;padding:6px 14px;border-radius:20px;font-size:12px">AYA 2 / 7</span><span style="background:#fffbeb;border:1px solid #c9a227;padding:6px 14px;border-radius:20px;font-size:11px">ALHAMDULILLAH - SHUKRANI NDIO MLANGO WA ZIADA</span></div>
+<h3 style="font-family:Amiri,serif;color:#0d2a22;margin:14px 0">الْحَمْدُ لِلَّهِ رَبِّ الْعَالَمِينَ</h3>
+<div class="aya-box" dir="rtl" style="text-align:right;font-size:22px">الْحَمْدُ لِلَّهِ رَبِّ الْعَالَمِينَ</div>
+<div class="block"><h4>Matamshi</h4><p style="background:#fffbeb;padding:10px;border-radius:8px"><em>Alhamdulillahi Rabbil Alamin</em> - Sifa njema zote ni za Allah Mola wa walimwengu wote.</p></div>
+<div class="block"><h4>Pambanuzi</h4><div class="funzo-box"><p><strong>Tafsir:</strong> Hamd ni tofauti na Shukr - Hamd ni sifa kwa uzuri wake, Shukr ni sifa kwa neema aliyokupa. Alhamdulillah inajumuisha zote mbili.<br><strong>Siri:</strong> Mwenye kusoma Alhamdulillah mara 100 kila siku, Allah anamzidishia neema - <span dir="rtl">لَئِنْ شَكَرْتُمْ لَأَزِيدَنَّكُمْ</span> - La in shakartum la azidannakum. Ibn Qayyim alisema: Shukrani ni nusu ya Imani.<br><strong>Ibn Sirin:</strong> Alhamdulillah ni dawa ya kibri - mwenye kibri hawezi kusema Alhamdulillah kwa moyo - anajiona yeye ndiye aliyejitahidi. Mwenye kusema Alhamdulillah kwa moyo, kibri kinatoka.<br><strong>Matumizi:</strong> Soma Alhamdulillah mara 30 baada ya kila swala - kwa moyo wa shukrani - riziki inaongezeka. Andika Alhamdulillah mara 7 kwenye bakuli la maji na unywe - kwa ugonjwa wa moyo mgumu.<br><strong>Funzo:</strong> Anza kila siku na Alhamdulillah - kabla ya simu, kabla ya kazi.</p></div></div>
+</div>
+
+<!-- AYA 3 -->
+<div style="background:white;border:2px solid #0d2a22;border-radius:12px;padding:20px;margin:20px 0">
+<div style="display:flex;justify-content:space-between;align-items:center"><span style="background:#0d2a22;color:#fde68a;padding:6px 14px;border-radius:20px;font-size:12px">AYA 3 / 7</span><span style="background:#fffbeb;border:1px solid #c9a227;padding:6px 14px;border-radius:20px;font-size:11px">AR-RAHMAN AR-RAHIM - REHEMA MBILI</span></div>
+<h3 style="font-family:Amiri,serif;color:#0d2a22;margin:14px 0">الرَّحْمَٰنِ الرَّحِيمِ</h3>
+<div class="aya-box" dir="rtl" style="text-align:right;font-size:22px">الرَّحْمَٰنِ الرَّحِيمِ</div>
+<div class="block"><h4>Matamshi</h4><p style="background:#fffbeb;padding:10px;border-radius:8px"><em>Ar-Rahmanir-Rahim</em> - Mwingi wa Rehema, Mwenye Kurehemu.</p></div>
+<div class="block"><h4>Pambanuzi</h4><div class="funzo-box"><p><strong>Tofauti ya Rahman na Rahim:</strong> Rahman ni rehema ya jumla - kwa kila kiumbe - kafiri na muumini - duniani. Rahim ni rehema maalum - kwa waumini tu Akhera.<br><strong>Siri:</strong> Rahman mara 100 kila siku baada ya Alfajiri - Allah anakurehemu na anakupa upendo wa watu - hasa kwa mwenye moyo mgumu. Rahim mara 100 jioni - kwa maghfira.<br><strong>Ghazali:</strong> Mwenye kutaka moyo wake uwe na rehema kama moyo wa Mtume ﷺ, asome Ar-Rahmanir-Rahim mara 100 na afikirie viumbe vyote - hata mchwa ana rehema ya Rahman.<br><strong>Funzo:</strong> Rehema ndio dawa ya hasad na kibri - moyo wenye rehema hauwezi kuwa na kibri.</p></div></div>
+</div>
+
+<!-- AYA 4 -->
+<div style="background:white;border:2px solid #0d2a22;border-radius:12px;padding:20px;margin:20px 0">
+<div style="display:flex;justify-content:space-between;align-items:center"><span style="background:#0d2a22;color:#fde68a;padding:6px 14px;border-radius:20px;font-size:12px">AYA 4 / 7</span><span style="background:#fffbeb;border:1px solid #c9a227;padding:6px 14px;border-radius:20px;font-size:11px">MALIKI YAWMIDDIN - SIKU YA HUKUMU</span></div>
+<h3 style="font-family:Amiri,serif;color:#0d2a22;margin:14px 0">مَالِكِ يَوْمِ الدِّينِ</h3>
+<div class="aya-box" dir="rtl" style="text-align:right;font-size:22px">مَالِكِ يَوْمِ الدِّينِ</div>
+<div class="block"><h4>Matamshi</h4><p style="background:#fffbeb;padding:10px;border-radius:8px"><em>Maliki Yawmiddin</em> - Mfalme wa Siku ya Malipo.</p></div>
+<div class="block"><h4>Pambanuzi</h4><div class="funzo-box"><p><strong>Tafsir:</strong> Maliki na Maaliki - Maliki ni Mfalme, Maaliki ni Mmiliki - zote ni sahihi - Allah ni Mfalme na Mmiliki wa Siku ya Hukumu - siku ambayo hakuna mfalme mwingine - <span dir="rtl">لِمَنِ الْمُلْكُ الْيَوْمَ ۖ لِلَّهِ الْوَاحِدِ الْقَهَّارِ</span>.<br><strong>Siri:</strong> Mwenye kusoma Maliki Yawmiddin mara 100 baada ya kila swala, Allah anampa heshima na cheo bila kibri - cheo cha haki. Ibn Arabi alisema: Maliki Yawmiddin ndio aya inayovunja kibri - ukikumbuka kuna Siku ya Hukumu, kibri kinatoka.<br><strong>Matumizi:</strong> Soma Maliki Yawmiddin mara 40 kwa mtu mwenye kibri cha cheo - kwa unyenyekevu.<br><strong>Funzo:</strong> Kila ukijivuna cheo, kumbuka Maliki Yawmiddin - wewe si maliki, Allah ndiye Maliki.</p></div></div>
+</div>
+
+<!-- AYA 5 -->
+<div style="background:linear-gradient(135deg,#0d2a22,#1a4a3a);color:white;border-radius:12px;padding:24px;margin:24px 0">
+<div style="display:flex;justify-content:space-between;align-items:center"><span style="background:#fde68a;color:#0d2a22;padding:6px 14px;border-radius:20px;font-size:12px;font-weight:700">AYA 5 / 7 - MOYO WA FATIHA</span><span style="background:rgba(255,255,255,0.2);color:white;padding:6px 14px;border-radius:20px;font-size:11px">IYAKANA'BUDU - TAUHID</span></div>
+<h3 style="font-family:Amiri,serif;color:#fde68a;margin:14px 0;font-size:22px">إِيَّاكَ نَعْبُدُ وَإِيَّاكَ نَسْتَعِينُ</h3>
+<div class="aya-box" style="background:#153d32" dir="rtl" style="text-align:right;font-size:22px">إِيَّاكَ نَعْبُدُ وَإِيَّاكَ نَسْتَعِينُ</div>
+<div class="block"><h4 style="color:#fde68a">Matamshi</h4><p style="background:rgba(255,255,255,0.1);padding:10px;border-radius:8px;color:#e8f0ed"><em>Iyyaka Na'budu wa Iyyaka Nasta'in</em> - Wewe tu tunakuabudu na Wewe tu tunaomba msaada.</p></div>
+<div class="block"><h4 style="color:#fde68a">Pambanuzi - Moyo wa Fatiha</h4><div style="background:rgba(255,255,255,0.1);padding:14px;border-radius:8px"><p style="color:#e8f0ed"><strong>Ibn Qayyim:</strong> Hii ndio aya ya kati ya Fatiha - nusu ya kwanza ni kwa Allah, nusu ya pili ni kwa mja. Iyyaka Na'budu ni Tauhid ya Ibada - Iyyaka Nasta'in ni Tauhid ya Msaada.<br><strong>Siri Kubwa:</strong> Mwenye kusoma Iyyaka Na'budu wa Iyyaka Nasta'in mara 100 kwa siku, Allah anamfungulia milango ya ibada na anamkinga na shirki ndogo - riyaa - kujionesha kwa watu. Hii ndio dawa ya kibri cha ibada.<br><strong>Ibn Sirin:</strong> Iyyaka Na'budu ndio inavunja kibri cha ibada - watu wengine wakiswali wanajiona bora kuliko wasioswali - hiyo ni kibri cha ibada - dawa yake ni kusema Iyyaka Na'budu - Wewe tu tunakuabudu - sio kwa nguvu zetu - ni kwa msaada wako.<br><strong>Matumizi:</strong> Soma Iyyaka Na'budu mara 7 kabla ya kila ibada - kwa ikhlasi.<br><strong>Funzo:</strong> Kila ibada sema: Wewe tu - sio mimi - Wewe tu ndiye unaenipa nguvu ya kuabudu.</p></div></div>
+</div>
+
+<!-- AYA 6 -->
+<div style="background:white;border:2px solid #0d2a22;border-radius:12px;padding:20px;margin:20px 0">
+<div style="display:flex;justify-content:space-between;align-items:center"><span style="background:#0d2a22;color:#fde68a;padding:6px 14px;border-radius:20px;font-size:12px">AYA 6 / 7</span><span style="background:#fffbeb;border:1px solid #c9a227;padding:6px 14px;border-radius:20px;font-size:11px">IHDIINA - DUA KUBWA KULIKO ZOTE</span></div>
+<h3 style="font-family:Amiri,serif;color:#0d2a22;margin:14px 0">اهْدِنَا الصِّرَاطَ الْمُسْتَقِيمَ</h3>
+<div class="aya-box" dir="rtl" style="text-align:right;font-size:22px">اهْدِنَا الصِّرَاطَ الْمُسْتَقِيمَ</div>
+<div class="block"><h4>Matamshi</h4><p style="background:#fffbeb;padding:10px;border-radius:8px"><em>Ihdina Siratal Mustaqim</em> - Tuongoze njia iliyonyooka.</p></div>
+<div class="block"><h4>Pambanuzi</h4><div class="funzo-box"><p><strong>Tafsir:</strong> Hii ndio dua kubwa kuliko zote - unaiomba mara 17 kwa siku katika swala - Ihdina - Tuongoze. Sio Ihdi - Niongoze - ni Ihdina - Tuongoze - kwa umoja - wewe na familia na Ummah.<br><strong>Siri:</strong> Siratul Mustaqim ni nini? Ibn Abbas alisema: Ni Quran na Sunnah. Ghazali alisema: Ni moyo ulionyooka bila kibri na hasad. Mwenye kusoma Ihdina Siratal Mustaqim mara 100 kila siku, Allah anamwongoza kwenye maamuzi magumu - hasa mwenye moyo unaogeuka-geuka (Qalb).<br><strong>Matumizi:</strong> Ukiwa na shida ya kuchagua jambo - soma Ihdina mara 100 na ulale - utaona njia katika ndoto - Ibn Sirin alikuwa akifanya hivyo.<br><strong>Funzo:</strong> Kila siku omba uongofu - hata kama unaswali - kwa sababu moyo unageuka mara 70 kwa siku.</p></div></div>
+</div>
+
+<!-- AYA 7 -->
+<div style="background:white;border:2px solid #0d2a22;border-radius:12px;padding:20px;margin:20px 0">
+<div style="display:flex;justify-content:space-between;align-items:center"><span style="background:#0d2a22;color:#fde68a;padding:6px 14px;border-radius:20px;font-size:12px">AYA 7 / 7</span><span style="background:#fffbeb;border:1px solid #c9a227;padding:6px 14px;border-radius:20px;font-size:11px">SIRATAL LADHINA - NJIA YA WALIOONGOZWA</span></div>
+<h3 style="font-family:Amiri,serif;color:#0d2a22;margin:14px 0">صِرَاطَ الَّذِينَ أَنْعَمْتَ عَلَيْهِمْ غَيْرِ الْمَغْضُوبِ عَلَيْهِمْ وَلَا الضَّالِّينَ</h3>
+<div class="aya-box" dir="rtl" style="text-align:right;font-size:22px;line-height:2">صِرَاطَ الَّذِينَ أَنْعَمْتَ عَلَيْهِمْ غَيْرِ الْمَغْضُوبِ عَلَيْهِمْ وَلَا الضَّالِّينَ</div>
+<div class="block"><h4>Matamshi</h4><p style="background:#fffbeb;padding:10px;border-radius:8px"><em>Siratal ladhina an'amta alayhim ghayril maghdubi alayhim wa lad-dallin</em> - Njia ya wale Uliowaneemesha, sio ya wale walioghadhibikiwa na wala waliopotea.</p></div>
+<div class="block"><h4>Pambanuzi</h4><div class="funzo-box"><p><strong>Tafsir:</strong> Alladhina an'amta alayhim - ni Manabii, Siddiqin, Shuhadaa, Swalihin - <span dir="rtl">وَمَنْ يُطِعِ اللهَ وَالرَّسُولَ فَأُولَٰئِكَ مَعَ الَّذِينَ أَنْعَمَ اللهُ عَلَيْهِمْ</span>. Ghayril maghdubi alayhim - ni Mayahudi - walijua haki lakini walikataa kwa kibri. Wa lad-dallin - ni Manasara - walipotea kwa ujinga bila elimu.<br><strong>Siri:</strong> Aya hii inafundisha kuepuka makundi mawili: (1) Wenye elimu bila matendo - Maghdubi - kama Iblis alijua haki lakini kibri. (2) Wenye matendo bila elimu - Dwallin - wanaabudu bila kujua. Mwenye kusoma aya hii mara 100, Allah anamkinga na kibri cha elimu na upotevu wa ujinga.<br><strong>Ibn Sirin:</strong> Hii ndio aya ya mwisho ya Fatiha - inafunga Fatiha kwa kutuonyesha njia 3: Njia ya neema (Manabii), njia ya ghadhabu (wenye kibri), njia ya upotevu (wenye ujinga). Chagua njia ya neema - njia ya unyenyekevu na elimu na matendo.<br><strong>Matumizi:</strong> Soma aya hii mara 7 baada ya Fatiha kamili - kwa ulinzi wa njia - hasa kwa watoto wasipotee.<br><strong>Funzo:</strong> Kila siku jiulize: Niko njia gani? Ya neema, ya ghadhabu (kibri), au ya upotevu (ujinga)?</p></div></div>
+<div class="dua-box" dir="rtl" style="text-align:center"><p style="font-size:20px">آمِينْ - يَا رَبَّ الْعَالَمِينَ</p></div><p style="background:#0d2a22;color:white;padding:8px;border-radius:8px;text-align:center">Amin - Malaika wanasema Amin pamoja na wewe ukisema Fatiha - hadith Bukhari - Dua inakubaliwa.</p>
+</div>
+
+<div style="background:linear-gradient(135deg,#0d2a22,#1a4a3a);color:white;border-radius:14px;padding:24px;margin:24px 0;text-align:center">
+<h3 style="color:#fde68a">📜 Muhtasari - Jinsi ya Kusoma Fatiha kwa Siri - Mbogo Shilingi</h3>
+<p style="color:#e8f0ed;text-align:left"><strong>Mpangilio wa kila siku - kabla ya Mambo 40:</strong><br>
+1. Bismillah mara 19 - kwa ulinzi<br>
+2. Alhamdulillah mara 30 - kwa shukrani<br>
+3. Ar-Rahmanir-Rahim mara 100 - kwa rehema<br>
+4. Maliki Yawmiddin mara 40 - kwa kuvunja kibri<br>
+5. Iyyaka Na'budu wa Iyyaka Nasta'in mara 100 - kwa ikhlasi<br>
+6. Ihdina Siratal Mustaqim mara 100 - kwa uongofu<br>
+7. Siratal ladhina... mara 7 - kwa kuthibitika njia ya neema<br>
+<br><strong>Jumla:</strong> Fatiha mara 7 kamili kila asubuhi - kwa moyo safi - kabla ya kusoma herufi 28 - ndipo siri zinafunguka.</p>
+<div class="aya-box" style="background:#153d32" dir="rtl">إِذَا قَرَأْتَ الْفَاتِحَةَ سَبْعَ مَرَّاتٍ فُتِحَتْ لَكَ أَبْوَابُ الْخَيْرِ كُلِّهَا</div>
+<p style="color:#a7f3d0">Ukisoma Fatiha mara 7, milango ya kheri yote inafunguka - wanazuoni wa siri.</p>
+</div>
+
+</div>
+
+
+<h2 style="text-align:center;color:#0d2a22;margin:30px 0" class="display">📚 Umu Al Kitaab - Mambo 40 - Herufi 28 Zote Zimetajwa</h2>
+
+
+<div class="item open" id="mambo1">
+  <div class="item-head" onclick="this.closest('.item').classList.toggle('open')"><div><div class="kicker">MAMBO 1 / 40</div><h2 class="display">1. Alif (ا) - Umoja wa Allah</h2></div><div class="arrow">▼</div></div>
+  <div class="item-body">
+    <div class="block"><h4>Aya / Herufi - Kiarabu na Irabu</h4><div class="aya-box" style="font-size:22px;line-height:2.2;text-align:right" dir="rtl">أَلِفٌ هُوَ الْحَرْفُ الْأَوَّلُ، سِرُّ الْأَحَدِ. إِذَا قَرَأْتَ أَلِفًا أَلْفَ مَرَّةٍ بَعْدَ الْفَجْرِ، يُفْتَحُ لَكَ بَابُ الرِّزْقِ الْحَلَالِ.</div></div>
+    <div class="block"><h4>Matamshi - Herufi za Kizungu</h4><p class="trans" style="background:#fffbeb;padding:10px 14px;border-radius:8px;border-left:3px solid #c9a227;font-style:italic">Alif ni herufi ya kwanza, siri ya Al-Ahad. Ukisoma Alif mara 1000 baada ya Alfajiri, riziki halali inafunguka.</p></div>
+    <div class="block"><h4>Fasiri</h4><p class="fasiri">Alif inafundisha umoja. Mwanafunzi akianza na Alif, anajifunza kumtegemea Allah peke yake.</p></div>
+    <div class="block"><h4>Funzo</h4><div class="funzo-box"><p>Funzo la Alif: Anza kila jambo kwa Bismillah na tawakkul.</p></div></div>
+    <div class="block"><h4>Dua Maalum - Kiarabu na Irabu</h4><div class="dua-box" style="text-align:right" dir="rtl"><p style="font-size:19px;line-height:2">يَا اللهُ بِحُرْمَةِ أَلِفٍ، افْتَحْ لَنَا أَبْوَابَ رِزْقِكَ الْحَلَالِ</p></div></div>
+    <div class="block"><h4>Matamshi ya Dua - Herufi za Kizungu</h4><p style="background:#0d2a22;color:#e8f0ed;padding:10px 14px;border-radius:8px">Ya Allahu bi hurmati Alif, iftaH lana abwaba rizqika al-halal - mara 1000</p></div>
+  </div>
+</div>
+
+<div class="item open" id="mambo2">
+  <div class="item-head" onclick="this.closest('.item').classList.toggle('open')"><div><div class="kicker">MAMBO 2 / 40</div><h2 class="display">2. Baa (ب) - Baraka</h2></div><div class="arrow">▼</div></div>
+  <div class="item-body">
+    <div class="block"><h4>Aya / Herufi - Kiarabu na Irabu</h4><div class="aya-box" style="font-size:22px;line-height:2.2;text-align:right" dir="rtl">بَاءٌ حَرْفُ الْبَرَكَةِ. اكْتُبْ بَاءً فِي وَرَقَةٍ بَيْضَاءَ وَضَعْهَا فِي جَيْبِكَ.</div></div>
+    <div class="block"><h4>Matamshi - Herufi za Kizungu</h4><p class="trans" style="background:#fffbeb;padding:10px 14px;border-radius:8px;border-left:3px solid #c9a227;font-style:italic">Baa ni herufi ya Baraka. Andika Baa kwenye karatasi nyeupe mfukoni wakati wa kutafuta kazi.</p></div>
+    <div class="block"><h4>Fasiri</h4><p class="fasiri">Baa ina nguvu ya kufungua baraka iliyofungwa.</p></div>
+    <div class="block"><h4>Funzo</h4><div class="funzo-box"><p>Funzo la Baa: Baraka haipatikani kwa hila, bali kwa tahara.</p></div></div>
+    <div class="block"><h4>Dua Maalum - Kiarabu na Irabu</h4><div class="dua-box" style="text-align:right" dir="rtl"><p style="font-size:19px;line-height:2">يَا بَارِئُ، بِحَقِّ بَاءٍ، بَارِكْ لَنَا</p></div></div>
+    <div class="block"><h4>Matamshi ya Dua - Herufi za Kizungu</h4><p style="background:#0d2a22;color:#e8f0ed;padding:10px 14px;border-radius:8px">Ya Baari'u, bi haqqi Baa, baarik lana - mara 313</p></div>
+  </div>
+</div>
+
+<div class="item open" id="mambo3">
+  <div class="item-head" onclick="this.closest('.item').classList.toggle('open')"><div><div class="kicker">MAMBO 3 / 40</div><h2 class="display">3. Taa (ت) - Tauba</h2></div><div class="arrow">▼</div></div>
+  <div class="item-body">
+    <div class="block"><h4>Aya / Herufi - Kiarabu na Irabu</h4><div class="aya-box" style="font-size:22px;line-height:2.2;text-align:right" dir="rtl">تَاءٌ حَرْفُ التَّوْبَةِ. إِذَا قَرَأْتَ تَاءً سَبْعِينَ مَرَّةً، يَغْفِرُ اللهُ لَكَ.</div></div>
+    <div class="block"><h4>Matamshi - Herufi za Kizungu</h4><p class="trans" style="background:#fffbeb;padding:10px 14px;border-radius:8px;border-left:3px solid #c9a227;font-style:italic">Taa ni herufi ya Tauba. Ukisoma Taa mara 70 kwa siku, Allah anakusamehe.</p></div>
+    <div class="block"><h4>Fasiri</h4><p class="fasiri">Taa inakufundisha kurudi kwa Allah kila siku.</p></div>
+    <div class="block"><h4>Funzo</h4><div class="funzo-box"><p>Funzo la Taa: Tauba ya kweli ni kuacha dhambi mara moja.</p></div></div>
+    <div class="block"><h4>Dua Maalum - Kiarabu na Irabu</h4><div class="dua-box" style="text-align:right" dir="rtl"><p style="font-size:19px;line-height:2">أَسْتَغْفِرُ اللهَ بِحَقِّ تَاءٍ</p></div></div>
+    <div class="block"><h4>Matamshi ya Dua - Herufi za Kizungu</h4><p style="background:#0d2a22;color:#e8f0ed;padding:10px 14px;border-radius:8px">Astaghfirullah bi haqqi Taa - mara 70</p></div>
+  </div>
+</div>
+
+<div class="item open" id="mambo4">
+  <div class="item-head" onclick="this.closest('.item').classList.toggle('open')"><div><div class="kicker">MAMBO 4 / 40</div><h2 class="display">4. Thaa (ث) - Thawab</h2></div><div class="arrow">▼</div></div>
+  <div class="item-body">
+    <div class="block"><h4>Aya / Herufi - Kiarabu na Irabu</h4><div class="aya-box" style="font-size:22px;line-height:2.2;text-align:right" dir="rtl">ثَاءٌ حَرْفُ الثَّوَابِ، كُلُّ حَسَنَةٍ بِعَشْرِ أَمْثَالِهَا.</div></div>
+    <div class="block"><h4>Matamshi - Herufi za Kizungu</h4><p class="trans" style="background:#fffbeb;padding:10px 14px;border-radius:8px;border-left:3px solid #c9a227;font-style:italic">Thaa ni herufi ya Thawab. Soma Thaa mara 40 baada ya kheri.</p></div>
+    <div class="block"><h4>Fasiri</h4><p class="fasiri">Thawab haipotei. Kila kheri na Thaa, Allah anaiandika mara dufu.</p></div>
+    <div class="block"><h4>Funzo</h4><div class="funzo-box"><p>Funzo la Thaa: Usidharau kheri ndogo.</p></div></div>
+    <div class="block"><h4>Dua Maalum - Kiarabu na Irabu</h4><div class="dua-box" style="text-align:right" dir="rtl"><p style="font-size:19px;line-height:2">يَا مُثِيبُ بِحَقِّ ثَاءٍ، آتِنَا ثَوَابًا</p></div></div>
+    <div class="block"><h4>Matamshi ya Dua - Herufi za Kizungu</h4><p style="background:#0d2a22;color:#e8f0ed;padding:10px 14px;border-radius:8px">Ya Muthiibu bi haqqi Thaa - mara 40</p></div>
+  </div>
+</div>
+
+<div class="item open" id="mambo5">
+  <div class="item-head" onclick="this.closest('.item').classList.toggle('open')"><div><div class="kicker">MAMBO 5 / 40</div><h2 class="display">5. Jiim (ج) - Jalala</h2></div><div class="arrow">▼</div></div>
+  <div class="item-body">
+    <div class="block"><h4>Aya / Herufi - Kiarabu na Irabu</h4><div class="aya-box" style="font-size:22px;line-height:2.2;text-align:right" dir="rtl">جِيمٌ حَرْفُ الْجَلَالِ وَالْجَمَالِ، لِلْمَحَبَّةِ الْحَلَالِ.</div></div>
+    <div class="block"><h4>Matamshi - Herufi za Kizungu</h4><p class="trans" style="background:#fffbeb;padding:10px 14px;border-radius:8px;border-left:3px solid #c9a227;font-style:italic">Jiim ni herufi ya Jalala na uzuri. Kwa mapenzi halali ya ndoa.</p></div>
+    <div class="block"><h4>Fasiri</h4><p class="fasiri">Jiim haifai kwa zinaa, ni kwa ndoa tu.</p></div>
+    <div class="block"><h4>Funzo</h4><div class="funzo-box"><p>Funzo la Jiim: Mapenzi halali huleta Jalala.</p></div></div>
+    <div class="block"><h4>Dua Maalum - Kiarabu na Irabu</h4><div class="dua-box" style="text-align:right" dir="rtl"><p style="font-size:19px;line-height:2">يَا جَامِعُ بِحَقِّ جِيمٍ، اجْمَعْ بَيْنَنَا بِالْحَلَالِ</p></div></div>
+    <div class="block"><h4>Matamshi ya Dua - Herufi za Kizungu</h4><p style="background:#0d2a22;color:#e8f0ed;padding:10px 14px;border-radius:8px">Ya Jami'u bi haqqi Jiim - mara 99</p></div>
+  </div>
+</div>
+
+<div class="item open" id="mambo6">
+  <div class="item-head" onclick="this.closest('.item').classList.toggle('open')"><div><div class="kicker">MAMBO 6 / 40</div><h2 class="display">6. Haa (ح) - Hifdhi</h2></div><div class="arrow">▼</div></div>
+  <div class="item-body">
+    <div class="block"><h4>Aya / Herufi - Kiarabu na Irabu</h4><div class="aya-box" style="font-size:22px;line-height:2.2;text-align:right" dir="rtl">حَاءٌ حَرْفُ الْحِفْظِ، احْفَظْ بَيْتَكَ مِنْ كُلِّ شَرٍّ.</div></div>
+    <div class="block"><h4>Matamshi - Herufi za Kizungu</h4><p class="trans" style="background:#fffbeb;padding:10px 14px;border-radius:8px;border-left:3px solid #c9a227;font-style:italic">Haa ni herufi ya Hifdhi. Andika Haa mara 7 mlangoni.</p></div>
+    <div class="block"><h4>Fasiri</h4><p class="fasiri">Hifdhi ya Allah ni bora kuliko ulinzi wa watu.</p></div>
+    <div class="block"><h4>Funzo</h4><div class="funzo-box"><p>Funzo la Haa: Kabla ya kufuli, funga kwa dua.</p></div></div>
+    <div class="block"><h4>Dua Maalum - Kiarabu na Irabu</h4><div class="dua-box" style="text-align:right" dir="rtl"><p style="font-size:19px;line-height:2">يَا حَفِيظُ بِحَقِّ حَاءٍ، احْفَظْنَا</p></div></div>
+    <div class="block"><h4>Matamshi ya Dua - Herufi za Kizungu</h4><p style="background:#0d2a22;color:#e8f0ed;padding:10px 14px;border-radius:8px">Ya Hafidhu bi haqqi Haa - mara 100</p></div>
+  </div>
+</div>
+
+<div class="item open" id="mambo7">
+  <div class="item-head" onclick="this.closest('.item').classList.toggle('open')"><div><div class="kicker">MAMBO 7 / 40</div><h2 class="display">7. Khaa (خ) - Khair</h2></div><div class="arrow">▼</div></div>
+  <div class="item-body">
+    <div class="block"><h4>Aya / Herufi - Kiarabu na Irabu</h4><div class="aya-box" style="font-size:22px;line-height:2.2;text-align:right" dir="rtl">خَاءٌ حَرْفُ الْخَيْرِ، اخْتَرْ لِنَفْسِكَ الْخَيْرَ.</div></div>
+    <div class="block"><h4>Matamshi - Herufi za Kizungu</h4><p class="trans" style="background:#fffbeb;padding:10px 14px;border-radius:8px;border-left:3px solid #c9a227;font-style:italic">Khaa ni herufi ya Khair. Soma Khaa wakati wa kuchagua jambo.</p></div>
+    <div class="block"><h4>Fasiri</h4><p class="fasiri">Khaa inakufundisha kutafuta kheri.</p></div>
+    <div class="block"><h4>Funzo</h4><div class="funzo-box"><p>Funzo la Khaa: Kheri ya kweli inawanufaisha wengine.</p></div></div>
+    <div class="block"><h4>Dua Maalum - Kiarabu na Irabu</h4><div class="dua-box" style="text-align:right" dir="rtl"><p style="font-size:19px;line-height:2">يَا خَبِيرُ بِحَقِّ خَاءٍ، اخْتَرْ لَنَا الْخَيْرَ</p></div></div>
+    <div class="block"><h4>Matamshi ya Dua - Herufi za Kizungu</h4><p style="background:#0d2a22;color:#e8f0ed;padding:10px 14px;border-radius:8px">Ya Khabiru bi haqqi Khaa - mara 70</p></div>
+  </div>
+</div>
+
+<div class="item open" id="mambo8">
+  <div class="item-head" onclick="this.closest('.item').classList.toggle('open')"><div><div class="kicker">MAMBO 8 / 40</div><h2 class="display">8. Daal (د) - Dua</h2></div><div class="arrow">▼</div></div>
+  <div class="item-body">
+    <div class="block"><h4>Aya / Herufi - Kiarabu na Irabu</h4><div class="aya-box" style="font-size:22px;line-height:2.2;text-align:right" dir="rtl">دَالٌ حَرْفُ الدُّعَاءِ، ادْعُ اللهَ يُسْتَجَبْ لَكَ.</div></div>
+    <div class="block"><h4>Matamshi - Herufi za Kizungu</h4><p class="trans" style="background:#fffbeb;padding:10px 14px;border-radius:8px;border-left:3px solid #c9a227;font-style:italic">Daal ni herufi ya Dua. Soma Daal kabla ya dua kuu.</p></div>
+    <div class="block"><h4>Fasiri</h4><p class="fasiri">Daal ni mlango wa dua.</p></div>
+    <div class="block"><h4>Funzo</h4><div class="funzo-box"><p>Funzo la Daal: Dua bila Daal ni kama barua bila anwani.</p></div></div>
+    <div class="block"><h4>Dua Maalum - Kiarabu na Irabu</h4><div class="dua-box" style="text-align:right" dir="rtl"><p style="font-size:19px;line-height:2">يَا دَيَّانُ بِحَقِّ دَالٍ، اسْتَجِبْ دُعَاءَنَا</p></div></div>
+    <div class="block"><h4>Matamshi ya Dua - Herufi za Kizungu</h4><p style="background:#0d2a22;color:#e8f0ed;padding:10px 14px;border-radius:8px">Ya Daiyan bi haqqi Daal - mara 100</p></div>
+  </div>
+</div>
+
+<div class="item open" id="mambo9">
+  <div class="item-head" onclick="this.closest('.item').classList.toggle('open')"><div><div class="kicker">MAMBO 9 / 40</div><h2 class="display">9. Dhaal (ذ) - Dhikr</h2></div><div class="arrow">▼</div></div>
+  <div class="item-body">
+    <div class="block"><h4>Aya / Herufi - Kiarabu na Irabu</h4><div class="aya-box" style="font-size:22px;line-height:2.2;text-align:right" dir="rtl">ذَالٌ حَرْفُ الذِّكْرِ، اذْكُرِ اللهَ كَثِيرًا.</div></div>
+    <div class="block"><h4>Matamshi - Herufi za Kizungu</h4><p class="trans" style="background:#fffbeb;padding:10px 14px;border-radius:8px;border-left:3px solid #c9a227;font-style:italic">Dhaal ni herufi ya Dhikr. Soma Dhaal mara 100 jioni.</p></div>
+    <div class="block"><h4>Fasiri</h4><p class="fasiri">Dhikr ndiyo chakula cha roho.</p></div>
+    <div class="block"><h4>Funzo</h4><div class="funzo-box"><p>Funzo la Dhaal: Moyo usiotaja Allah ni kama samaki nje ya maji.</p></div></div>
+    <div class="block"><h4>Dua Maalum - Kiarabu na Irabu</h4><div class="dua-box" style="text-align:right" dir="rtl"><p style="font-size:19px;line-height:2">يَا ذَاكِرُ بِحَقِّ ذَالٍ، اذْكُرْنَا</p></div></div>
+    <div class="block"><h4>Matamshi ya Dua - Herufi za Kizungu</h4><p style="background:#0d2a22;color:#e8f0ed;padding:10px 14px;border-radius:8px">Ya Dhakiru bi haqqi Dhaal - mara 100</p></div>
+  </div>
+</div>
+
+<div class="item open" id="mambo10">
+  <div class="item-head" onclick="this.closest('.item').classList.toggle('open')"><div><div class="kicker">MAMBO 10 / 40</div><h2 class="display">10. Raa (ر) - Riziki</h2></div><div class="arrow">▼</div></div>
+  <div class="item-body">
+    <div class="block"><h4>Aya / Herufi - Kiarabu na Irabu</h4><div class="aya-box" style="font-size:22px;line-height:2.2;text-align:right" dir="rtl">رَاءٌ حَرْفُ الرِّزْقِ، يَأْتِي مِنْ حَيْثُ لَا تَحْتَسِبُ.</div></div>
+    <div class="block"><h4>Matamshi - Herufi za Kizungu</h4><p class="trans" style="background:#fffbeb;padding:10px 14px;border-radius:8px;border-left:3px solid #c9a227;font-style:italic">Raa ni herufi ya Riziki. Soma Raa mara 308 asubuhi.</p></div>
+    <div class="block"><h4>Fasiri</h4><p class="fasiri">Raa ni siri ya riziki ya ghaibu.</p></div>
+    <div class="block"><h4>Funzo</h4><div class="funzo-box"><p>Funzo la Raa: Riziki ipo mikononi mwa Allah.</p></div></div>
+    <div class="block"><h4>Dua Maalum - Kiarabu na Irabu</h4><div class="dua-box" style="text-align:right" dir="rtl"><p style="font-size:19px;line-height:2">يَا رَزَّاقُ بِحَقِّ رَاءٍ، ارْزُقْنَا</p></div></div>
+    <div class="block"><h4>Matamshi ya Dua - Herufi za Kizungu</h4><p style="background:#0d2a22;color:#e8f0ed;padding:10px 14px;border-radius:8px">Ya Razzaqu bi haqqi Raa - mara 308</p></div>
+  </div>
+</div>
+
+<div class="item open" id="mambo11">
+  <div class="item-head" onclick="this.closest('.item').classList.toggle('open')"><div><div class="kicker">MAMBO 11 / 40</div><h2 class="display">11. Zaa (ز) - Zaka</h2></div><div class="arrow">▼</div></div>
+  <div class="item-body">
+    <div class="block"><h4>Aya / Herufi - Kiarabu na Irabu</h4><div class="aya-box" style="font-size:22px;line-height:2.2;text-align:right" dir="rtl">زَايٌ حَرْفُ الزَّكَاةِ وَالزِّيَادَةِ، مَنْ يَزَكِّي مَالَهُ يَزِيدُ.</div></div>
+    <div class="block"><h4>Matamshi - Herufi za Kizungu</h4><p class="trans" style="background:#fffbeb;padding:10px 14px;border-radius:8px;border-left:3px solid #c9a227;font-style:italic">Zaa ni herufi ya Zaka na kuongezeka. Soma Zaa mara 100 wakati wa kutoa zaka.</p></div>
+    <div class="block"><h4>Fasiri</h4><p class="fasiri">Zaka inasafisha mali na kuongeza baraka.</p></div>
+    <div class="block"><h4>Funzo</h4><div class="funzo-box"><p>Funzo la Zaa: Mali bila zaka ni kama shamba bila maji.</p></div></div>
+    <div class="block"><h4>Dua Maalum - Kiarabu na Irabu</h4><div class="dua-box" style="text-align:right" dir="rtl"><p style="font-size:19px;line-height:2">يَا مُزَكِّي بِحَقِّ زَايٍ، زَكِّ مَالَنَا</p></div></div>
+    <div class="block"><h4>Matamshi ya Dua - Herufi za Kizungu</h4><p style="background:#0d2a22;color:#e8f0ed;padding:10px 14px;border-radius:8px">Ya Muzakki bi haqqi Zaa, zakki maalana - mara 100</p></div>
+  </div>
+</div>
+
+<div class="item open" id="mambo12">
+  <div class="item-head" onclick="this.closest('.item').classList.toggle('open')"><div><div class="kicker">MAMBO 12 / 40</div><h2 class="display">12. Siin (س) - Siri</h2></div><div class="arrow">▼</div></div>
+  <div class="item-body">
+    <div class="block"><h4>Aya / Herufi - Kiarabu na Irabu</h4><div class="aya-box" style="font-size:22px;line-height:2.2;text-align:right" dir="rtl">سِينٌ حَرْفُ السِّرِّ، احْفَظْ سِرَّكَ تَسْلَمْ.</div></div>
+    <div class="block"><h4>Matamshi - Herufi za Kizungu</h4><p class="trans" style="background:#fffbeb;padding:10px 14px;border-radius:8px;border-left:3px solid #c9a227;font-style:italic">Siin ni herufi ya Siri. Siin inafundisha kuficha siri za kheri usiwaambie hasidi.</p></div>
+    <div class="block"><h4>Fasiri</h4><p class="fasiri">Siri ikifichuka, nguvu yake inapungua.</p></div>
+    <div class="block"><h4>Funzo</h4><div class="funzo-box"><p>Funzo la Siin: Siri ya kheri inapaswa kufichwa kama dhahabu.</p></div></div>
+    <div class="block"><h4>Dua Maalum - Kiarabu na Irabu</h4><div class="dua-box" style="text-align:right" dir="rtl"><p style="font-size:19px;line-height:2">يَا سَتَّارُ بِحَقِّ سِينٍ، اسْتُرْ أَسْرَارَنَا</p></div></div>
+    <div class="block"><h4>Matamshi ya Dua - Herufi za Kizungu</h4><p style="background:#0d2a22;color:#e8f0ed;padding:10px 14px;border-radius:8px">Ya Sattar bi haqqi Siin, ustur asraarana - mara 70</p></div>
+  </div>
+</div>
+
+<div class="item open" id="mambo13">
+  <div class="item-head" onclick="this.closest('.item').classList.toggle('open')"><div><div class="kicker">MAMBO 13 / 40</div><h2 class="display">13. Shiin (ش) - Shukrani</h2></div><div class="arrow">▼</div></div>
+  <div class="item-body">
+    <div class="block"><h4>Aya / Herufi - Kiarabu na Irabu</h4><div class="aya-box" style="font-size:22px;line-height:2.2;text-align:right" dir="rtl">شِينٌ حَرْفُ الشُّكْرِ، لَئِنْ شَكَرْتُمْ لَأَزِيدَنَّكُمْ.</div></div>
+    <div class="block"><h4>Matamshi - Herufi za Kizungu</h4><p class="trans" style="background:#fffbeb;padding:10px 14px;border-radius:8px;border-left:3px solid #c9a227;font-style:italic">Shiin ni herufi ya Shukrani. Ukisoma Shiin mara 100 baada ya kupata neema, neema inaongezeka.</p></div>
+    <div class="block"><h4>Fasiri</h4><p class="fasiri">Shukrani inaleta ziyada, kukufuru kunaleta hasara.</p></div>
+    <div class="block"><h4>Funzo</h4><div class="funzo-box"><p>Funzo la Shiin: Shukuru kidogo, Allah akupe kingi.</p></div></div>
+    <div class="block"><h4>Dua Maalum - Kiarabu na Irabu</h4><div class="dua-box" style="text-align:right" dir="rtl"><p style="font-size:19px;line-height:2">يَا شَكُورُ بِحَقِّ شِينٍ، لَكَ الشُّكْرُ</p></div></div>
+    <div class="block"><h4>Matamshi ya Dua - Herufi za Kizungu</h4><p style="background:#0d2a22;color:#e8f0ed;padding:10px 14px;border-radius:8px">Ya Shakur bi haqqi Shiin, laka shukru - mara 100</p></div>
+  </div>
+</div>
+
+<div class="item open" id="mambo14">
+  <div class="item-head" onclick="this.closest('.item').classList.toggle('open')"><div><div class="kicker">MAMBO 14 / 40</div><h2 class="display">14. Swad (ص) - Sabr</h2></div><div class="arrow">▼</div></div>
+  <div class="item-body">
+    <div class="block"><h4>Aya / Herufi - Kiarabu na Irabu</h4><div class="aya-box" style="font-size:22px;line-height:2.2;text-align:right" dir="rtl">صَادٌ حَرْفُ الصَّبْرِ، وَاسْتَعِينُوا بِالصَّبْرِ وَالصَّلَاةِ.</div></div>
+    <div class="block"><h4>Matamshi - Herufi za Kizungu</h4><p class="trans" style="background:#fffbeb;padding:10px 14px;border-radius:8px;border-left:3px solid #c9a227;font-style:italic">Swad ni herufi ya Sabr. Soma Swad mara 90 wakati wa dhiki.</p></div>
+    <div class="block"><h4>Fasiri</h4><p class="fasiri">Sabr ndiyo mfunguo wa faraja.</p></div>
+    <div class="block"><h4>Funzo</h4><div class="funzo-box"><p>Funzo la Swad: Msabiri haanguki, anachelewa tu kufika.</p></div></div>
+    <div class="block"><h4>Dua Maalum - Kiarabu na Irabu</h4><div class="dua-box" style="text-align:right" dir="rtl"><p style="font-size:19px;line-height:2">يَا صَبُورُ بِحَقِّ صَادٍ، صَبِّرْنَا</p></div></div>
+    <div class="block"><h4>Matamshi ya Dua - Herufi za Kizungu</h4><p style="background:#0d2a22;color:#e8f0ed;padding:10px 14px;border-radius:8px">Ya Sabur bi haqqi Swad, sabbirna - mara 90</p></div>
+  </div>
+</div>
+
+<div class="item open" id="mambo15">
+  <div class="item-head" onclick="this.closest('.item').classList.toggle('open')"><div><div class="kicker">MAMBO 15 / 40</div><h2 class="display">15. Dwad (ض) - Dhamana</h2></div><div class="arrow">▼</div></div>
+  <div class="item-body">
+    <div class="block"><h4>Aya / Herufi - Kiarabu na Irabu</h4><div class="aya-box" style="font-size:22px;line-height:2.2;text-align:right" dir="rtl">ضَادٌ حَرْفُ الضَّمَانِ، اللهُ ضَامِنٌ لِرِزْقِ كُلِّ حَيٍّ.</div></div>
+    <div class="block"><h4>Matamshi - Herufi za Kizungu</h4><p class="trans" style="background:#fffbeb;padding:10px 14px;border-radius:8px;border-left:3px solid #c9a227;font-style:italic">Dwad ni herufi ya Dhamana. Allah ndiye mdhamini wa riziki yako.</p></div>
+    <div class="block"><h4>Fasiri</h4><p class="fasiri">Dhamana ya Allah haianguki kamwe.</p></div>
+    <div class="block"><h4>Funzo</h4><div class="funzo-box"><p>Funzo la Dwad: Usimuamini tajiri, muamini Allah aliye na hazina.</p></div></div>
+    <div class="block"><h4>Dua Maalum - Kiarabu na Irabu</h4><div class="dua-box" style="text-align:right" dir="rtl"><p style="font-size:19px;line-height:2">يَا ضَامِنُ بِحَقِّ ضَادٍ، اضْمَنْ لَنَا الرِّزْقَ</p></div></div>
+    <div class="block"><h4>Matamshi ya Dua - Herufi za Kizungu</h4><p style="background:#0d2a22;color:#e8f0ed;padding:10px 14px;border-radius:8px">Ya Dhamin bi haqqi Dwad, idhman lana rizq - mara 80</p></div>
+  </div>
+</div>
+
+<div class="item open" id="mambo16">
+  <div class="item-head" onclick="this.closest('.item').classList.toggle('open')"><div><div class="kicker">MAMBO 16 / 40</div><h2 class="display">16. Twa (ط) - Tahara</h2></div><div class="arrow">▼</div></div>
+  <div class="item-body">
+    <div class="block"><h4>Aya / Herufi - Kiarabu na Irabu</h4><div class="aya-box" style="font-size:22px;line-height:2.2;text-align:right" dir="rtl">طَاءٌ حَرْفُ الطَّهَارَةِ، الطَّهَارَةُ شَطْرُ الْإِيمَانِ.</div></div>
+    <div class="block"><h4>Matamshi - Herufi za Kizungu</h4><p class="trans" style="background:#fffbeb;padding:10px 14px;border-radius:8px;border-left:3px solid #c9a227;font-style:italic">Twa ni herufi ya Tahara. Oga na vaa nyeupe kabla ya kusoma herufi.</p></div>
+    <div class="block"><h4>Fasiri</h4><p class="fasiri">Tahara ni heshima kwa herufi.</p></div>
+    <div class="block"><h4>Funzo</h4><div class="funzo-box"><p>Funzo la Twa: Mwili safi, roho safi, dua inakubaliwa.</p></div></div>
+    <div class="block"><h4>Dua Maalum - Kiarabu na Irabu</h4><div class="dua-box" style="text-align:right" dir="rtl"><p style="font-size:19px;line-height:2">يَا طَاهِرُ بِحَقِّ طَاءٍ، طَهِّرْنَا</p></div></div>
+    <div class="block"><h4>Matamshi ya Dua - Herufi za Kizungu</h4><p style="background:#0d2a22;color:#e8f0ed;padding:10px 14px;border-radius:8px">Ya Tahiru bi haqqi Twa, tahhirna - mara 40</p></div>
+  </div>
+</div>
+
+<div class="item open" id="mambo17">
+  <div class="item-head" onclick="this.closest('.item').classList.toggle('open')"><div><div class="kicker">MAMBO 17 / 40</div><h2 class="display">17. Dhaa (ظ) - Dhuhur</h2></div><div class="arrow">▼</div></div>
+  <div class="item-body">
+    <div class="block"><h4>Aya / Herufi - Kiarabu na Irabu</h4><div class="aya-box" style="font-size:22px;line-height:2.2;text-align:right" dir="rtl">ظَاءٌ حَرْفُ الظُّهُورِ، سَيَظْهَرُ الْحَقُّ وَيَزْهَقُ الْبَاطِلُ.</div></div>
+    <div class="block"><h4>Matamshi - Herufi za Kizungu</h4><p class="trans" style="background:#fffbeb;padding:10px 14px;border-radius:8px;border-left:3px solid #c9a227;font-style:italic">Dhaa ni herufi ya Kudhihiri. Soma Dhaa wakati haki yako imefichwa.</p></div>
+    <div class="block"><h4>Fasiri</h4><p class="fasiri">Haki ikidhihiri, batili hutoweka.</p></div>
+    <div class="block"><h4>Funzo</h4><div class="funzo-box"><p>Funzo la Dhaa: Haki hainyamazishwi milele.</p></div></div>
+    <div class="block"><h4>Dua Maalum - Kiarabu na Irabu</h4><div class="dua-box" style="text-align:right" dir="rtl"><p style="font-size:19px;line-height:2">يَا ظَاهِرُ بِحَقِّ ظَاءٍ، أَظْهِرْ حَقَّنَا</p></div></div>
+    <div class="block"><h4>Matamshi ya Dua - Herufi za Kizungu</h4><p style="background:#0d2a22;color:#e8f0ed;padding:10px 14px;border-radius:8px">Ya Dhahir bi haqqi Dhaa, adhhir haqqana - mara 70</p></div>
+  </div>
+</div>
+
+<div class="item open" id="mambo18">
+  <div class="item-head" onclick="this.closest('.item').classList.toggle('open')"><div><div class="kicker">MAMBO 18 / 40</div><h2 class="display">18. Ain (ع) - Ilm</h2></div><div class="arrow">▼</div></div>
+  <div class="item-body">
+    <div class="block"><h4>Aya / Herufi - Kiarabu na Irabu</h4><div class="aya-box" style="font-size:22px;line-height:2.2;text-align:right" dir="rtl">عَيْنٌ حَرْفُ الْعِلْمِ، وَقُلْ رَبِّ زِدْنِي عِلْمًا.</div></div>
+    <div class="block"><h4>Matamshi - Herufi za Kizungu</h4><p class="trans" style="background:#fffbeb;padding:10px 14px;border-radius:8px;border-left:3px solid #c9a227;font-style:italic">Ain ni herufi ya Ilm. Soma Ain mara 100 kabla ya kusoma kitabu.</p></div>
+    <div class="block"><h4>Fasiri</h4><p class="fasiri">Ilm bila amali ni kama mti bila matunda.</p></div>
+    <div class="block"><h4>Funzo</h4><div class="funzo-box"><p>Funzo la Ain: Ilm ya kweli inakufanya unyenyekee, si kujivuna.</p></div></div>
+    <div class="block"><h4>Dua Maalum - Kiarabu na Irabu</h4><div class="dua-box" style="text-align:right" dir="rtl"><p style="font-size:19px;line-height:2">يَا عَلِيمُ بِحَقِّ عَيْنٍ، عَلِّمْنَا</p></div></div>
+    <div class="block"><h4>Matamshi ya Dua - Herufi za Kizungu</h4><p style="background:#0d2a22;color:#e8f0ed;padding:10px 14px;border-radius:8px">Ya Alimu bi haqqi Ain, allimna - mara 100</p></div>
+  </div>
+</div>
+
+<div class="item open" id="mambo19">
+  <div class="item-head" onclick="this.closest('.item').classList.toggle('open')"><div><div class="kicker">MAMBO 19 / 40</div><h2 class="display">19. Ghain (غ) - Ghafara</h2></div><div class="arrow">▼</div></div>
+  <div class="item-body">
+    <div class="block"><h4>Aya / Herufi - Kiarabu na Irabu</h4><div class="aya-box" style="font-size:22px;line-height:2.2;text-align:right" dir="rtl">غَيْنٌ حَرْفُ الْمَغْفِرَةِ، اسْتَغْفِرُوا رَبَّكُمْ إِنَّهُ كَانَ غَفَّارًا.</div></div>
+    <div class="block"><h4>Matamshi - Herufi za Kizungu</h4><p class="trans" style="background:#fffbeb;padding:10px 14px;border-radius:8px;border-left:3px solid #c9a227;font-style:italic">Ghain ni herufi ya Maghfira. Soma Ghain mara 70 kwa msamaha.</p></div>
+    <div class="block"><h4>Fasiri</h4><p class="fasiri">Maghfira linafungua milango iliyofungwa.</p></div>
+    <div class="block"><h4>Funzo</h4><div class="funzo-box"><p>Funzo la Ghain: Msamehewe ndiye anayesamehe wengine.</p></div></div>
+    <div class="block"><h4>Dua Maalum - Kiarabu na Irabu</h4><div class="dua-box" style="text-align:right" dir="rtl"><p style="font-size:19px;line-height:2">يَا غَفَّارُ بِحَقِّ غَيْنٍ، اغْفِرْ لَنَا</p></div></div>
+    <div class="block"><h4>Matamshi ya Dua - Herufi za Kizungu</h4><p style="background:#0d2a22;color:#e8f0ed;padding:10px 14px;border-radius:8px">Ya Ghaffar bi haqqi Ghain, ighfir lana - mara 70</p></div>
+  </div>
+</div>
+
+<div class="item open" id="mambo20">
+  <div class="item-head" onclick="this.closest('.item').classList.toggle('open')"><div><div class="kicker">MAMBO 20 / 40</div><h2 class="display">20. Faa (ف) - Faraj</h2></div><div class="arrow">▼</div></div>
+  <div class="item-body">
+    <div class="block"><h4>Aya / Herufi - Kiarabu na Irabu</h4><div class="aya-box" style="font-size:22px;line-height:2.2;text-align:right" dir="rtl">فَاءٌ حَرْفُ الْفَرَجِ، فَإِنَّ مَعَ الْعُسْرِ يُسْرًا.</div></div>
+    <div class="block"><h4>Matamshi - Herufi za Kizungu</h4><p class="trans" style="background:#fffbeb;padding:10px 14px;border-radius:8px;border-left:3px solid #c9a227;font-style:italic">Faa ni herufi ya Faraja. Soma Faa mara 100 wakati wa shida.</p></div>
+    <div class="block"><h4>Fasiri</h4><p class="fasiri">Baada ya dhiki, faraja inakuja.</p></div>
+    <div class="block"><h4>Funzo</h4><div class="funzo-box"><p>Funzo la Faa: Usikate tamaa, Faa inakuja baada ya usiku.</p></div></div>
+    <div class="block"><h4>Dua Maalum - Kiarabu na Irabu</h4><div class="dua-box" style="text-align:right" dir="rtl"><p style="font-size:19px;line-height:2">يَا فَارِجُ بِحَقِّ فَاءٍ، فَرِّجْ عَنَّا</p></div></div>
+    <div class="block"><h4>Matamshi ya Dua - Herufi za Kizungu</h4><p style="background:#0d2a22;color:#e8f0ed;padding:10px 14px;border-radius:8px">Ya Faariju bi haqqi Faa, farrij anna - mara 100</p></div>
+  </div>
+</div>
+
+<div class="item open" id="mambo21">
+  <div class="item-head" onclick="this.closest('.item').classList.toggle('open')"><div><div class="kicker">MAMBO 21 / 40</div><h2 class="display">21. Qaaf (ق) - Qudra</h2></div><div class="arrow">▼</div></div>
+  <div class="item-body">
+    <div class="block"><h4>Aya / Herufi - Kiarabu na Irabu</h4><div class="aya-box" style="font-size:22px;line-height:2.2;text-align:right" dir="rtl">قَافٌ حَرْفُ الْقُدْرَةِ، وَهُوَ عَلَى كُلِّ شَيْءٍ قَدِيرٌ.</div></div>
+    <div class="block"><h4>Matamshi - Herufi za Kizungu</h4><p class="trans" style="background:#fffbeb;padding:10px 14px;border-radius:8px;border-left:3px solid #c9a227;font-style:italic">Qaaf ni herufi ya Qudra. Soma Qaaf wakati unahisi dhaifu.</p></div>
+    <div class="block"><h4>Fasiri</h4><p class="fasiri">Qudra ya Allah haina mipaka.</p></div>
+    <div class="block"><h4>Funzo</h4><div class="funzo-box"><p>Funzo la Qaaf: Dhaifu mbele ya watu, ni hodari mbele ya Allah kwa Qaaf.</p></div></div>
+    <div class="block"><h4>Dua Maalum - Kiarabu na Irabu</h4><div class="dua-box" style="text-align:right" dir="rtl"><p style="font-size:19px;line-height:2">يَا قَدِيرُ بِحَقِّ قَافٍ، أَقْدِرْنَا عَلَى الْخَيْرِ</p></div></div>
+    <div class="block"><h4>Matamshi ya Dua - Herufi za Kizungu</h4><p style="background:#0d2a22;color:#e8f0ed;padding:10px 14px;border-radius:8px">Ya Qadir bi haqqi Qaaf - mara 100</p></div>
+  </div>
+</div>
+
+<div class="item open" id="mambo22">
+  <div class="item-head" onclick="this.closest('.item').classList.toggle('open')"><div><div class="kicker">MAMBO 22 / 40</div><h2 class="display">22. Kaaf (ك) - Karama</h2></div><div class="arrow">▼</div></div>
+  <div class="item-body">
+    <div class="block"><h4>Aya / Herufi - Kiarabu na Irabu</h4><div class="aya-box" style="font-size:22px;line-height:2.2;text-align:right" dir="rtl">كَافٌ حَرْفُ الْكَرَامَةِ، وَلَقَدْ كَرَّمْنَا بَنِي آدَمَ.</div></div>
+    <div class="block"><h4>Matamshi - Herufi za Kizungu</h4><p class="trans" style="background:#fffbeb;padding:10px 14px;border-radius:8px;border-left:3px solid #c9a227;font-style:italic">Kaaf ni herufi ya Karama. Soma Kaaf ili Allah akupe heshima.</p></div>
+    <div class="block"><h4>Fasiri</h4><p class="fasiri">Karama hutoka kwa Allah, si kwa watu.</p></div>
+    <div class="block"><h4>Funzo</h4><div class="funzo-box"><p>Funzo la Kaaf: Jiheshimu, Allah atakuheshimisha.</p></div></div>
+    <div class="block"><h4>Dua Maalum - Kiarabu na Irabu</h4><div class="dua-box" style="text-align:right" dir="rtl"><p style="font-size:19px;line-height:2">يَا كَرِيمُ بِحَقِّ كَافٍ، أَكْرِمْنَا</p></div></div>
+    <div class="block"><h4>Matamshi ya Dua - Herufi za Kizungu</h4><p style="background:#0d2a22;color:#e8f0ed;padding:10px 14px;border-radius:8px">Ya Karim bi haqqi Kaaf, akrimna - mara 100</p></div>
+  </div>
+</div>
+
+<div class="item open" id="mambo23">
+  <div class="item-head" onclick="this.closest('.item').classList.toggle('open')"><div><div class="kicker">MAMBO 23 / 40</div><h2 class="display">23. Laam (ل) - Lutf</h2></div><div class="arrow">▼</div></div>
+  <div class="item-body">
+    <div class="block"><h4>Aya / Herufi - Kiarabu na Irabu</h4><div class="aya-box" style="font-size:22px;line-height:2.2;text-align:right" dir="rtl">لَامٌ حَرْفُ اللُّطْفِ، اللهُ لَطِيفٌ بِعِبَادِهِ.</div></div>
+    <div class="block"><h4>Matamshi - Herufi za Kizungu</h4><p class="trans" style="background:#fffbeb;padding:10px 14px;border-radius:8px;border-left:3px solid #c9a227;font-style:italic">Laam ni herufi ya Lutfu - upole. Soma Laam kwa moyo mgumu.</p></div>
+    <div class="block"><h4>Fasiri</h4><p class="fasiri">Upole unashinda ugumu.</p></div>
+    <div class="block"><h4>Funzo</h4><div class="funzo-box"><p>Funzo la Laam: Maneno matamu huyeyusha moyo mgumu.</p></div></div>
+    <div class="block"><h4>Dua Maalum - Kiarabu na Irabu</h4><div class="dua-box" style="text-align:right" dir="rtl"><p style="font-size:19px;line-height:2">يَا لَطِيفُ بِحَقِّ لَامٍ، الْطُفْ بِنَا</p></div></div>
+    <div class="block"><h4>Matamshi ya Dua - Herufi za Kizungu</h4><p style="background:#0d2a22;color:#e8f0ed;padding:10px 14px;border-radius:8px">Ya Latifu bi haqqi Laam, ultuf bina - mara 100</p></div>
+  </div>
+</div>
+
+<div class="item open" id="mambo24">
+  <div class="item-head" onclick="this.closest('.item').classList.toggle('open')"><div><div class="kicker">MAMBO 24 / 40</div><h2 class="display">24. Miim (م) - Mahaba</h2></div><div class="arrow">▼</div></div>
+  <div class="item-body">
+    <div class="block"><h4>Aya / Herufi - Kiarabu na Irabu</h4><div class="aya-box" style="font-size:22px;line-height:2.2;text-align:right" dir="rtl">مِيمٌ حَرْفُ الْمَحَبَّةِ، وَجَعَلَ بَيْنَكُمْ مَوَدَّةً وَرَحْمَةً.</div></div>
+    <div class="block"><h4>Matamshi - Herufi za Kizungu</h4><p class="trans" style="background:#fffbeb;padding:10px 14px;border-radius:8px;border-left:3px solid #c9a227;font-style:italic">Miim ni herufi ya Mahaba. Soma Miim kwa mapenzi halali ya ndoa.</p></div>
+    <div class="block"><h4>Fasiri</h4><p class="fasiri">Mahaba ya halali ni ibada.</p></div>
+    <div class="block"><h4>Funzo</h4><div class="funzo-box"><p>Funzo la Miim: Mahaba bila ndoa ni sumu, na ndoa ni dawa.</p></div></div>
+    <div class="block"><h4>Dua Maalum - Kiarabu na Irabu</h4><div class="dua-box" style="text-align:right" dir="rtl"><p style="font-size:19px;line-height:2">يَا وَدُودُ بِحَقِّ مِيمٍ، اجْعَلْ مَحَبَّتَنَا حَلَالًا</p></div></div>
+    <div class="block"><h4>Matamshi ya Dua - Herufi za Kizungu</h4><p style="background:#0d2a22;color:#e8f0ed;padding:10px 14px;border-radius:8px">Ya Wadudu bi haqqi Miim - mara 100</p></div>
+  </div>
+</div>
+
+<div class="item open" id="mambo25">
+  <div class="item-head" onclick="this.closest('.item').classList.toggle('open')"><div><div class="kicker">MAMBO 25 / 40</div><h2 class="display">25. Nuun (ن) - Nur</h2></div><div class="arrow">▼</div></div>
+  <div class="item-body">
+    <div class="block"><h4>Aya / Herufi - Kiarabu na Irabu</h4><div class="aya-box" style="font-size:22px;line-height:2.2;text-align:right" dir="rtl">نُونٌ حَرْفُ النُّورِ، اللهُ نُورُ السَّمَاوَاتِ وَالْأَرْضِ.</div></div>
+    <div class="block"><h4>Matamshi - Herufi za Kizungu</h4><p class="trans" style="background:#fffbeb;padding:10px 14px;border-radius:8px;border-left:3px solid #c9a227;font-style:italic">Nuun ni herufi ya Nur. Soma Nuun mara 100 usiku, moyo unaangaa.</p></div>
+    <div class="block"><h4>Fasiri</h4><p class="fasiri">Nur ya Allah inaondoa giza la dhambi.</p></div>
+    <div class="block"><h4>Funzo</h4><div class="funzo-box"><p>Funzo la Nuun: Tafuta Nur, si moto wa fitna.</p></div></div>
+    <div class="block"><h4>Dua Maalum - Kiarabu na Irabu</h4><div class="dua-box" style="text-align:right" dir="rtl"><p style="font-size:19px;line-height:2">يَا نُورُ بِحَقِّ نُونٍ، نَوِّرْ قَلْبِي</p></div></div>
+    <div class="block"><h4>Matamshi ya Dua - Herufi za Kizungu</h4><p style="background:#0d2a22;color:#e8f0ed;padding:10px 14px;border-radius:8px">Ya Nur bi haqqi Nuun, nawwir qalbi - mara 100</p></div>
+  </div>
+</div>
+
+<div class="item open" id="mambo26">
+  <div class="item-head" onclick="this.closest('.item').classList.toggle('open')"><div><div class="kicker">MAMBO 26 / 40</div><h2 class="display">26. Waw (و) - Wilaya</h2></div><div class="arrow">▼</div></div>
+  <div class="item-body">
+    <div class="block"><h4>Aya / Herufi - Kiarabu na Irabu</h4><div class="aya-box" style="font-size:22px;line-height:2.2;text-align:right" dir="rtl">وَاوٌ حَرْفُ الْوِلَايَةِ، اللهُ وَلِيُّ الَّذِينَ آمَنُوا.</div></div>
+    <div class="block"><h4>Matamshi - Herufi za Kizungu</h4><p class="trans" style="background:#fffbeb;padding:10px 14px;border-radius:8px;border-left:3px solid #c9a227;font-style:italic">Waw ni herufi ya Ulinzi wa Allah. Soma Waw unapohisi upweke.</p></div>
+    <div class="block"><h4>Fasiri</h4><p class="fasiri">Allah ndiye rafiki wa kweli.</p></div>
+    <div class="block"><h4>Funzo</h4><div class="funzo-box"><p>Funzo la Waw: Ukiwa na Allah, huna upweke.</p></div></div>
+    <div class="block"><h4>Dua Maalum - Kiarabu na Irabu</h4><div class="dua-box" style="text-align:right" dir="rtl"><p style="font-size:19px;line-height:2">يَا وَلِيُّ بِحَقِّ وَاوٍ، تَوَلَّ أَمْرَنَا</p></div></div>
+    <div class="block"><h4>Matamshi ya Dua - Herufi za Kizungu</h4><p style="background:#0d2a22;color:#e8f0ed;padding:10px 14px;border-radius:8px">Ya Waliyyu bi haqqi Waw, tawalla amrana - mara 100</p></div>
+  </div>
+</div>
+
+<div class="item open" id="mambo27">
+  <div class="item-head" onclick="this.closest('.item').classList.toggle('open')"><div><div class="kicker">MAMBO 27 / 40</div><h2 class="display">27. Haa (ه) - Huda</h2></div><div class="arrow">▼</div></div>
+  <div class="item-body">
+    <div class="block"><h4>Aya / Herufi - Kiarabu na Irabu</h4><div class="aya-box" style="font-size:22px;line-height:2.2;text-align:right" dir="rtl">هَاءٌ حَرْفُ الْهُدَى، اهْدِنَا الصِّرَاطَ الْمُسْتَقِيمَ.</div></div>
+    <div class="block"><h4>Matamshi - Herufi za Kizungu</h4><p class="trans" style="background:#fffbeb;padding:10px 14px;border-radius:8px;border-left:3px solid #c9a227;font-style:italic">Haa ni herufi ya Huda - muongozo. Soma Haa ukipotea njia.</p></div>
+    <div class="block"><h4>Fasiri</h4><p class="fasiri">Huda ya Allah haipotezi.</p></div>
+    <div class="block"><h4>Funzo</h4><div class="funzo-box"><p>Funzo la Haa: Mwongozo wa Allah ndio njia ya kweli.</p></div></div>
+    <div class="block"><h4>Dua Maalum - Kiarabu na Irabu</h4><div class="dua-box" style="text-align:right" dir="rtl"><p style="font-size:19px;line-height:2">يَا هَادِي بِحَقِّ هَاءٍ، اهْدِنَا</p></div></div>
+    <div class="block"><h4>Matamshi ya Dua - Herufi za Kizungu</h4><p style="background:#0d2a22;color:#e8f0ed;padding:10px 14px;border-radius:8px">Ya Hadi bi haqqi Haa, ihdina - mara 100</p></div>
+  </div>
+</div>
+
+<div class="item open" id="mambo28">
+  <div class="item-head" onclick="this.closest('.item').classList.toggle('open')"><div><div class="kicker">MAMBO 28 / 40</div><h2 class="display">28. Yaa (ي) - Yaqin</h2></div><div class="arrow">▼</div></div>
+  <div class="item-body">
+    <div class="block"><h4>Aya / Herufi - Kiarabu na Irabu</h4><div class="aya-box" style="font-size:22px;line-height:2.2;text-align:right" dir="rtl">يَاءٌ حَرْفُ الْيَقِينِ، وَاعْبُدْ رَبَّكَ حَتَّى يَأْتِيَكَ الْيَقِينُ.</div></div>
+    <div class="block"><h4>Matamshi - Herufi za Kizungu</h4><p class="trans" style="background:#fffbeb;padding:10px 14px;border-radius:8px;border-left:3px solid #c9a227;font-style:italic">Yaa ni herufi ya Yaqin. Soma Yaa mara 100 ili yakini iongezeke.</p></div>
+    <div class="block"><h4>Fasiri</h4><p class="fasiri">Yaqin ndiyo nguvu ya dua.</p></div>
+    <div class="block"><h4>Funzo</h4><div class="funzo-box"><p>Funzo la Yaa: Dua bila yaqini ni kama mshale bila ncha.</p></div></div>
+    <div class="block"><h4>Dua Maalum - Kiarabu na Irabu</h4><div class="dua-box" style="text-align:right" dir="rtl"><p style="font-size:19px;line-height:2">يَا يَقِينُ بِحَقِّ يَاءٍ، ثَبِّتْ يَقِينَنَا</p></div></div>
+    <div class="block"><h4>Matamshi ya Dua - Herufi za Kizungu</h4><p style="background:#0d2a22;color:#e8f0ed;padding:10px 14px;border-radius:8px">Ya Yaqin bi haqqi Yaa, thabbit yaqinana - mara 100</p></div>
+  </div>
+</div>
+
+<div class="item open" id="mambo29">
+  <div class="item-head" onclick="this.closest('.item').classList.toggle('open')"><div><div class="kicker">MAMBO 29 / 40</div><h2 class="display">29. Laam-Alif (لا) - La Ilaha</h2></div><div class="arrow">▼</div></div>
+  <div class="item-body">
+    <div class="block"><h4>Aya / Herufi - Kiarabu na Irabu</h4><div class="aya-box" style="font-size:22px;line-height:2.2;text-align:right" dir="rtl">لَامْ أَلِفٌ، لَا إِلَهَ إِلَّا اللهُ، مِفْتَاحُ الْجَنَّةِ.</div></div>
+    <div class="block"><h4>Matamshi - Herufi za Kizungu</h4><p class="trans" style="background:#fffbeb;padding:10px 14px;border-radius:8px;border-left:3px solid #c9a227;font-style:italic">Laam-Alif ni herufi ya La Ilaha Illallah. Soma La mara 1000 kwa tawhid.</p></div>
+    <div class="block"><h4>Fasiri</h4><p class="fasiri">Tawhid ndiyo msingi wa dini.</p></div>
+    <div class="block"><h4>Funzo</h4><div class="funzo-box"><p>Funzo la La: Hakuna mungu ila Allah, hakuna msaada ila kutoka kwake.</p></div></div>
+    <div class="block"><h4>Dua Maalum - Kiarabu na Irabu</h4><div class="dua-box" style="text-align:right" dir="rtl"><p style="font-size:19px;line-height:2">لَا إِلَهَ إِلَّا اللهُ بِحَقِّ لَامْ أَلِفٍ</p></div></div>
+    <div class="block"><h4>Matamshi ya Dua - Herufi za Kizungu</h4><p style="background:#0d2a22;color:#e8f0ed;padding:10px 14px;border-radius:8px">La ilaha illallah bi haqqi Laam-Alif - mara 1000</p></div>
+  </div>
+</div>
+
+<div class="item open" id="mambo30">
+  <div class="item-head" onclick="this.closest('.item').classList.toggle('open')"><div><div class="kicker">MAMBO 30 / 40</div><h2 class="display">30. Hamza (ء) - Asili</h2></div><div class="arrow">▼</div></div>
+  <div class="item-body">
+    <div class="block"><h4>Aya / Herufi - Kiarabu na Irabu</h4><div class="aya-box" style="font-size:22px;line-height:2.2;text-align:right" dir="rtl">هَمْزَةٌ أَصْلُ الْحُرُوفِ، مِنْهَا يَبْدَأُ كُلُّ شَيْءٍ.</div></div>
+    <div class="block"><h4>Matamshi - Herufi za Kizungu</h4><p class="trans" style="background:#fffbeb;padding:10px 14px;border-radius:8px;border-left:3px solid #c9a227;font-style:italic">Hamza ni asili ya herufi. Hamza inafundisha mwanzo mpya.</p></div>
+    <div class="block"><h4>Fasiri</h4><p class="fasiri">Kila mwanzo mpya una baraka.</p></div>
+    <div class="block"><h4>Funzo</h4><div class="funzo-box"><p>Funzo la Hamza: Anza upya, usikate tamaa na jana.</p></div></div>
+    <div class="block"><h4>Dua Maalum - Kiarabu na Irabu</h4><div class="dua-box" style="text-align:right" dir="rtl"><p style="font-size:19px;line-height:2">يَا مُمْبَدِئُ بِحَقِّ هَمْزَةٍ، ابْدَأْ لَنَا بِخَيْرٍ</p></div></div>
+    <div class="block"><h4>Matamshi ya Dua - Herufi za Kizungu</h4><p style="background:#0d2a22;color:#e8f0ed;padding:10px 14px;border-radius:8px">Ya Mubdi'u bi haqqi Hamza - mara 70</p></div>
+  </div>
+</div>
+
+<div class="item open" id="mambo31">
+  <div class="item-head" onclick="this.closest('.item').classList.toggle('open')"><div><div class="kicker">MAMBO 31 / 40</div><h2 class="display">31. Nia ya Moyo</h2></div><div class="arrow">▼</div></div>
+  <div class="item-body">
+    <div class="block"><h4>Aya / Herufi - Kiarabu na Irabu</h4><div class="aya-box" style="font-size:22px;line-height:2.2;text-align:right" dir="rtl">النِّيَّةُ أَسَاسُ كُلِّ عَمَلٍ، إِنَّمَا الْأَعْمَالُ بِالنِّيَّاتِ.</div></div>
+    <div class="block"><h4>Matamshi - Herufi za Kizungu</h4><p class="trans" style="background:#fffbeb;padding:10px 14px;border-radius:8px;border-left:3px solid #c9a227;font-style:italic">Kabla ya kusoma sema: Ninasoma kwa ajili ya Allah ili nipate elimu ya kumsaidia Ummah.</p></div>
+    <div class="block"><h4>Fasiri</h4><p class="fasiri">Nia safi ndiyo msingi wa siri zote.</p></div>
+    <div class="block"><h4>Funzo</h4><div class="funzo-box"><p>Funzo la Nia: Nia mbaya inaharibu hata ibada kubwa.</p></div></div>
+    <div class="block"><h4>Dua Maalum - Kiarabu na Irabu</h4><div class="dua-box" style="text-align:right" dir="rtl"><p style="font-size:19px;line-height:2">اللَّهُمَّ إِنِّي نَوَيْتُ قِرَاءَةَ هَذِهِ الْحُرُوفِ لِوَجْهِكَ</p></div></div>
+    <div class="block"><h4>Matamshi ya Dua - Herufi za Kizungu</h4><p style="background:#0d2a22;color:#e8f0ed;padding:10px 14px;border-radius:8px">Allahumma inni nawaytu qira'ata hadhal hurufi</p></div>
+  </div>
+</div>
+
+<div class="item open" id="mambo32">
+  <div class="item-head" onclick="this.closest('.item').classList.toggle('open')"><div><div class="kicker">MAMBO 32 / 40</div><h2 class="display">32. Tahara ya Mwili</h2></div><div class="arrow">▼</div></div>
+  <div class="item-body">
+    <div class="block"><h4>Aya / Herufi - Kiarabu na Irabu</h4><div class="aya-box" style="font-size:22px;line-height:2.2;text-align:right" dir="rtl">الطَّهَارَةُ شَطْرُ الْإِيمَانِ.</div></div>
+    <div class="block"><h4>Matamshi - Herufi za Kizungu</h4><p class="trans" style="background:#fffbeb;padding:10px 14px;border-radius:8px;border-left:3px solid #c9a227;font-style:italic">Oga, vaa nguo safi nyeupe, tia ubani mzuri (udi).</p></div>
+    <div class="block"><h4>Fasiri</h4><p class="fasiri">Tahara ni heshima kwa herufi.</p></div>
+    <div class="block"><h4>Funzo</h4><div class="funzo-box"><p>Funzo la Tahara: Malaika hawakai mahali pachafu.</p></div></div>
+    <div class="block"><h4>Dua Maalum - Kiarabu na Irabu</h4><div class="dua-box" style="text-align:right" dir="rtl"><p style="font-size:19px;line-height:2">يَا طَاهِرُ، طَهِّرْ قَلْبِي وَجَسَدِي</p></div></div>
+    <div class="block"><h4>Matamshi ya Dua - Herufi za Kizungu</h4><p style="background:#0d2a22;color:#e8f0ed;padding:10px 14px;border-radius:8px">Ya Tahiru, tahhir qalbi - mara 40</p></div>
+  </div>
+</div>
+
+<div class="item open" id="mambo33">
+  <div class="item-head" onclick="this.closest('.item').classList.toggle('open')"><div><div class="kicker">MAMBO 33 / 40</div><h2 class="display">33. Tahara ya Mahali</h2></div><div class="arrow">▼</div></div>
+  <div class="item-body">
+    <div class="block"><h4>Aya / Herufi - Kiarabu na Irabu</h4><div class="aya-box" style="font-size:22px;line-height:2.2;text-align:right" dir="rtl">الْمَكَانُ الطَّاهِرُ يَجْلِبُ الْمَلَائِكَةَ.</div></div>
+    <div class="block"><h4>Matamshi - Herufi za Kizungu</h4><p class="trans" style="background:#fffbeb;padding:10px 14px;border-radius:8px;border-left:3px solid #c9a227;font-style:italic">Safisha mahali unaposoma, elekea Kibla.</p></div>
+    <div class="block"><h4>Fasiri</h4><p class="fasiri">Mahali safi panavuta malaika.</p></div>
+    <div class="block"><h4>Funzo</h4><div class="funzo-box"><p>Funzo la Mahali: Mahali pachafu panafukuza baraka.</p></div></div>
+    <div class="block"><h4>Dua Maalum - Kiarabu na Irabu</h4><div class="dua-box" style="text-align:right" dir="rtl"><p style="font-size:19px;line-height:2">سُبْحَانَكَ اللَّهُمَّ وَبِحَمْدِكَ، طَهِّرْ مَكَانِي</p></div></div>
+    <div class="block"><h4>Matamshi ya Dua - Herufi za Kizungu</h4><p style="background:#0d2a22;color:#e8f0ed;padding:10px 14px;border-radius:8px">Subhanaka Allahumma tahhir makani - mara 7</p></div>
+  </div>
+</div>
+
+<div class="item open" id="mambo34">
+  <div class="item-head" onclick="this.closest('.item').classList.toggle('open')"><div><div class="kicker">MAMBO 34 / 40</div><h2 class="display">34. Wakati Bora</h2></div><div class="arrow">▼</div></div>
+  <div class="item-body">
+    <div class="block"><h4>Aya / Herufi - Kiarabu na Irabu</h4><div class="aya-box" style="font-size:22px;line-height:2.2;text-align:right" dir="rtl">الْوَقْتُ الْمُبَارَكُ بَعْدَ الْفَجْرِ وَالْمَغْرِبِ.</div></div>
+    <div class="block"><h4>Matamshi - Herufi za Kizungu</h4><p class="trans" style="background:#fffbeb;padding:10px 14px;border-radius:8px;border-left:3px solid #c9a227;font-style:italic">Wakati bora ni Alfajiri, Magharibi na usiku wa manane.</p></div>
+    <div class="block"><h4>Fasiri</h4><p class="fasiri">Wakati wa baraka, dua haizuiliwi.</p></div>
+    <div class="block"><h4>Funzo</h4><div class="funzo-box"><p>Funzo la Wakati: Herufi moja Alfajiri ni bora kuliko elfu mchana.</p></div></div>
+    <div class="block"><h4>Dua Maalum - Kiarabu na Irabu</h4><div class="dua-box" style="text-align:right" dir="rtl"><p style="font-size:19px;line-height:2">يَا فَتَّاحُ، افْتَحْ لِي فِي هَذَا الْوَقْتِ</p></div></div>
+    <div class="block"><h4>Matamshi ya Dua - Herufi za Kizungu</h4><p style="background:#0d2a22;color:#e8f0ed;padding:10px 14px;border-radius:8px">Ya Fattahu - mara 40</p></div>
+  </div>
+</div>
+
+<div class="item open" id="mambo35">
+  <div class="item-head" onclick="this.closest('.item').classList.toggle('open')"><div><div class="kicker">MAMBO 35 / 40</div><h2 class="display">35. Idadi ya Wird</h2></div><div class="arrow">▼</div></div>
+  <div class="item-body">
+    <div class="block"><h4>Aya / Herufi - Kiarabu na Irabu</h4><div class="aya-box" style="font-size:22px;line-height:2.2;text-align:right" dir="rtl">الْعَدَدُ مِيزَانُ الْأَسْرَارِ.</div></div>
+    <div class="block"><h4>Matamshi - Herufi za Kizungu</h4><p class="trans" style="background:#fffbeb;padding:10px 14px;border-radius:8px;border-left:3px solid #c9a227;font-style:italic">Kila herufi ina idadi yake: 40, 100, 313. Dumisha siku 40.</p></div>
+    <div class="block"><h4>Fasiri</h4><p class="fasiri">Idadi ni mizani.</p></div>
+    <div class="block"><h4>Funzo</h4><div class="funzo-box"><p>Funzo la Idadi: Kama dawa - ukipunguza haiponyi, ukizidisha inaua.</p></div></div>
+    <div class="block"><h4>Dua Maalum - Kiarabu na Irabu</h4><div class="dua-box" style="text-align:right" dir="rtl"><p style="font-size:19px;line-height:2">بِأَعْدَادٍ مَعْلُومَةٍ، تَقَبَّلْ مِنِّي</p></div></div>
+    <div class="block"><h4>Matamshi ya Dua - Herufi za Kizungu</h4><p style="background:#0d2a22;color:#e8f0ed;padding:10px 14px;border-radius:8px">Bi adadi maalam, taqabbal minni</p></div>
+  </div>
+</div>
+
+<div class="item open" id="mambo36">
+  <div class="item-head" onclick="this.closest('.item').classList.toggle('open')"><div><div class="kicker">MAMBO 36 / 40</div><h2 class="display">36. Bakhur na Udi</h2></div><div class="arrow">▼</div></div>
+  <div class="item-body">
+    <div class="block"><h4>Aya / Herufi - Kiarabu na Irabu</h4><div class="aya-box" style="font-size:22px;line-height:2.2;text-align:right" dir="rtl">الْبُخُورُ الطَّيِّبُ يَطْرُدُ الشَّيَاطِينَ.</div></div>
+    <div class="block"><h4>Matamshi - Herufi za Kizungu</h4><p class="trans" style="background:#fffbeb;padding:10px 14px;border-radius:8px;border-left:3px solid #c9a227;font-style:italic">Tia ubani mzuri - udi. Herufi ni nuru, hupenda harufu nzuri.</p></div>
+    <div class="block"><h4>Fasiri</h4><p class="fasiri">Ubani mzuri unavuta malaika.</p></div>
+    <div class="block"><h4>Funzo</h4><div class="funzo-box"><p>Funzo la Bakhur: Harufu mbaya inavuta shetani.</p></div></div>
+    <div class="block"><h4>Dua Maalum - Kiarabu na Irabu</h4><div class="dua-box" style="text-align:right" dir="rtl"><p style="font-size:19px;line-height:2">يَا طَيِّبُ، طَيِّبْ مَكَانِي بِذِكْرِكَ</p></div></div>
+    <div class="block"><h4>Matamshi ya Dua - Herufi za Kizungu</h4><p style="background:#0d2a22;color:#e8f0ed;padding:10px 14px;border-radius:8px">Ya Tayyibu, tayyib makani - mara 7</p></div>
+  </div>
+</div>
+
+<div class="item open" id="mambo37">
+  <div class="item-head" onclick="this.closest('.item').classList.toggle('open')"><div><div class="kicker">MAMBO 37 / 40</div><h2 class="display">37. Qibla na Mwelekeo</h2></div><div class="arrow">▼</div></div>
+  <div class="item-body">
+    <div class="block"><h4>Aya / Herufi - Kiarabu na Irabu</h4><div class="aya-box" style="font-size:22px;line-height:2.2;text-align:right" dir="rtl">الْقِبْلَةُ رَمْزُ الْوَحْدَةِ.</div></div>
+    <div class="block"><h4>Matamshi - Herufi za Kizungu</h4><p class="trans" style="background:#fffbeb;padding:10px 14px;border-radius:8px;border-left:3px solid #c9a227;font-style:italic">Elekea Kibla unaposoma. Weka uzani na ubani.</p></div>
+    <div class="block"><h4>Fasiri</h4><p class="fasiri">Qibla ni alama ya umoja wa Ummah.</p></div>
+    <div class="block"><h4>Funzo</h4><div class="funzo-box"><p>Funzo la Qibla: Mwelekeo mmoja, moyo mmoja.</p></div></div>
+    <div class="block"><h4>Dua Maalum - Kiarabu na Irabu</h4><div class="dua-box" style="text-align:right" dir="rtl"><p style="font-size:19px;line-height:2">وَجَّهْتُ وَجْهِيَ لِلَّذِي فَطَرَ السَّمَاوَاتِ</p></div></div>
+    <div class="block"><h4>Matamshi ya Dua - Herufi za Kizungu</h4><p style="background:#0d2a22;color:#e8f0ed;padding:10px 14px;border-radius:8px">Wajjahtu wajhi - mara 7</p></div>
+  </div>
+</div>
+
+<div class="item open" id="mambo38">
+  <div class="item-head" onclick="this.closest('.item').classList.toggle('open')"><div><div class="kicker">MAMBO 38 / 40</div><h2 class="display">38. Samt - Kunyamaza</h2></div><div class="arrow">▼</div></div>
+  <div class="item-body">
+    <div class="block"><h4>Aya / Herufi - Kiarabu na Irabu</h4><div class="aya-box" style="font-size:22px;line-height:2.2;text-align:right" dir="rtl">الصَّمْتُ حِكْمَةٌ.</div></div>
+    <div class="block"><h4>Matamshi - Herufi za Kizungu</h4><p class="trans" style="background:#fffbeb;padding:10px 14px;border-radius:8px;border-left:3px solid #c9a227;font-style:italic">Nyamaza usiwaambie watu siri zako za kheri.</p></div>
+    <div class="block"><h4>Fasiri</h4><p class="fasiri">Siri ikifichuka, hasidi anaingia.</p></div>
+    <div class="block"><h4>Funzo</h4><div class="funzo-box"><p>Funzo la Samt: Kimya cha kheri ni bora kuliko maneno ya hasara.</p></div></div>
+    <div class="block"><h4>Dua Maalum - Kiarabu na Irabu</h4><div class="dua-box" style="text-align:right" dir="rtl"><p style="font-size:19px;line-height:2">يَا حَكِيمُ، ارْزُقْنِي الصَّمْتَ عِنْدَ الْحِكْمَةِ</p></div></div>
+    <div class="block"><h4>Matamshi ya Dua - Herufi za Kizungu</h4><p style="background:#0d2a22;color:#e8f0ed;padding:10px 14px;border-radius:8px">Ya Hakim, urzuqni samt - mara 40</p></div>
+  </div>
+</div>
+
+<div class="item open" id="mambo39">
+  <div class="item-head" onclick="this.closest('.item').classList.toggle('open')"><div><div class="kicker">MAMBO 39 / 40</div><h2 class="display">39. Sabr na Shukrani</h2></div><div class="arrow">▼</div></div>
+  <div class="item-body">
+    <div class="block"><h4>Aya / Herufi - Kiarabu na Irabu</h4><div class="aya-box" style="font-size:22px;line-height:2.2;text-align:right" dir="rtl">الصَّبْرُ مِفْتَاحُ الْفَرَجِ وَالشُّكْرُ يَزِيدُ النِّعَمَ.</div></div>
+    <div class="block"><h4>Matamshi - Herufi za Kizungu</h4><p class="trans" style="background:#fffbeb;padding:10px 14px;border-radius:8px;border-left:3px solid #c9a227;font-style:italic">Vumilia siku 40, kisha shukuru. Sabr na Shukrani ndizo mbawa mbili.</p></div>
+    <div class="block"><h4>Fasiri</h4><p class="fasiri">Msabiri haanguki.</p></div>
+    <div class="block"><h4>Funzo</h4><div class="funzo-box"><p>Funzo la Sabr: Sabr na Shukrani ndizo mbawa za kupaa.</p></div></div>
+    <div class="block"><h4>Dua Maalum - Kiarabu na Irabu</h4><div class="dua-box" style="text-align:right" dir="rtl"><p style="font-size:19px;line-height:2">يَا صَبُورُ يَا شَكُورُ، صَبِّرْنَا وَشَكِّرْنَا</p></div></div>
+    <div class="block"><h4>Matamshi ya Dua - Herufi za Kizungu</h4><p style="background:#0d2a22;color:#e8f0ed;padding:10px 14px;border-radius:8px">Ya Sabur Ya Shakur - mara 100</p></div>
+  </div>
+</div>
+
+<div class="item open" id="mambo40">
+  <div class="item-head" onclick="this.closest('.item').classList.toggle('open')"><div><div class="kicker">MAMBO 40 / 40</div><h2 class="display">40. Hitimisho - Kueneza Elimu</h2></div><div class="arrow">▼</div></div>
+  <div class="item-body">
+    <div class="block"><h4>Aya / Herufi - Kiarabu na Irabu</h4><div class="aya-box" style="font-size:22px;line-height:2.2;text-align:right" dir="rtl">مَنْ كَتَمَ عِلْمًا أُلْجِمَ بِلِجَامٍ مِنْ نَارٍ.</div></div>
+    <div class="block"><h4>Matamshi - Herufi za Kizungu</h4><p class="trans" style="background:#fffbeb;padding:10px 14px;border-radius:8px;border-left:3px solid #c9a227;font-style:italic">Sambaza Umu Al Kitaab bure. Usiuze. Elimu ya bure ina baraka zaidi.</p></div>
+    <div class="block"><h4>Fasiri</h4><p class="fasiri">Mwenye kuficha elimu atafungwa kwa moto siku ya Kiama.</p></div>
+    <div class="block"><h4>Funzo</h4><div class="funzo-box"><p>Funzo la mwisho: Sambaza, dua ya msomaji itakurudi kwako.</p></div></div>
+    <div class="block"><h4>Dua Maalum - Kiarabu na Irabu</h4><div class="dua-box" style="text-align:right" dir="rtl"><p style="font-size:19px;line-height:2">اللَّهُمَّ اجْعَلْ هَذَا الْعِلْمَ صَدَقَةً جَارِيَةً</p></div></div>
+    <div class="block"><h4>Matamshi ya Dua - Herufi za Kizungu</h4><p style="background:#0d2a22;color:#e8f0ed;padding:10px 14px;border-radius:8px">Allahumma ij'al hadhal ilma sadaqatan jariyah</p></div>
+  </div>
+</div>
+
+
+<div class="wasifu" id="hitimisho">
+<h3>HITIMISHO - SHUKRANI NA WITO</h3>
+<p>Hapo Umu Al Kitaab inakamilika. Dumisha kwa kusoma kila Ijumaa herufi moja. Sambaza bure - Usiuze.<br><br><strong>Mwenye kuficha elimu atafungwa kwa moto siku ya Kiama. Sambaza.</strong></p>
+<div class="contact-box">
+<h4 style="color:#b89a5b;font-size:11px">MAWASILIANO - MBOGO SHILINGI</h4>
+<p>Email: mbogoshaban2026@gmail.com<br>Instagram: @mbogoshilingi<br>Facebook: Mbogo Shilingi<br>WhatsApp: 0743093316<br><br>Kitabu hiki ni bure - Dua yako inatosha.</p>
+</div>
+</div>
+
+<div style="background:linear-gradient(135deg,#ffffff,#fcfaf6);border:2px solid #0d2a22;border-radius:16px;padding:32px;margin:40px 0" id="maoni">
+<h3 style="text-align:center;color:#0d2a22">📚 MAONI NA MAPENDEKEZO</h3>
+<form id="maoniForm" style="background:#fdfbf7;padding:20px;border-radius:12px;border:1px solid #e8e0d0;display:grid;gap:14px">
+<input type="text" id="jina" placeholder="Jina lako" required style="padding:14px;border:1px solid #d1d5db;border-radius:10px">
+<input type="email" id="email_mtumaji" placeholder="Email yako" required style="padding:14px;border:1px solid #d1d5db;border-radius:10px">
+<textarea id="ujumbe" rows="4" placeholder="Ujumbe wako..." required style="padding:14px;border:1px solid #d1d5db;border-radius:10px"></textarea>
+<div style="display:grid;grid-template-columns:1fr 1fr;gap:12px">
+<button type="submit" style="background:#0d2a22;color:white;padding:16px;border:none;border-radius:10px;font-weight:700;cursor:pointer">📧 Tuma Maoni</button>
+<button type="button" onclick="sendWhatsApp()" style="background:#25D366;color:white;padding:16px;border:none;border-radius:10px;font-weight:700;cursor:pointer">💬 WhatsApp</button>
+</div>
+</form>
+</div>
+<script>
+function getFormData(){return{jina:document.getElementById('jina').value.trim(),email:document.getElementById('email_mtumaji').value.trim(),ujumbe:document.getElementById('ujumbe').value.trim()};}
+document.getElementById('maoniForm').addEventListener('submit',function(e){e.preventDefault();const d=getFormData();if(!d.jina||!d.email||!d.ujumbe){alert('Jaza jina');return;}window.location.href='mailto:mbogoshaban2026@gmail.com?subject=Maoni&body='+encodeURIComponent(d.ujumbe);});
+function sendWhatsApp(){const d=getFormData();if(!d.jina||!d.ujumbe){alert('Jaza jina');return;}window.open('https://wa.me/255743093316?text='+encodeURIComponent(d.ujumbe),'_blank');}
+</script>
+
+</div>
+<script>
+document.addEventListener('DOMContentLoaded', function(){
+  document.querySelectorAll('.item-head').forEach(function(h){
+    h.addEventListener('click', function(e){e.stopPropagation();this.closest('.item').classList.toggle('open');});
+  });
+  var first = document.querySelector('.item'); if(first) first.classList.add('open');
+});
+</script>
+</div>
+</div>
+
+<script>
+function showTab(name){
+  document.querySelectorAll('.tab').forEach(t=>t.classList.remove('active'));
+  document.getElementById('tab-'+name).classList.add('active');
+  document.getElementById('btn-orodha').style.background=name==='orodha'?'#b89a5b':'rgba(255,255,255,0.2)';
+  document.getElementById('btn-orodha').style.color=name==='orodha'?'#0d2a22':'white';
+  document.getElementById('btn-kitabu').style.background=name==='kitabu'?'#b89a5b':'rgba(255,255,255,0.2)';
+  document.getElementById('btn-kitabu').style.color=name==='kitabu'?'#0d2a22':'white';
+  window.scrollTo(0,0);
+}
+</script>
+</body></html>
